@@ -1,8 +1,13 @@
 import React from "react";
 import { ArrowLong, Ellipse } from "../../utils/icons";
 import JoinnowModal from "../Modal/JoinnowModal";
+import { Button } from "../Utils";
 import "./home.css";
 const Home = () => {
+  const [showModal, setShowModal] = React.useState(false);
+  const joinButtonClickHandler = () => {
+    setShowModal(true);
+  };
   return (
     <>
       <div className="flex flex-col mt-4 heading">
@@ -32,16 +37,14 @@ const Home = () => {
         <p>Thank You</p>
       </section>
       <section className="flex flex-col mt-16">
-        <button className=" border mx-auto bg-cookLime px-16 py-3 rounded-lg select-none border-cookGreen hover:bg-cookDarkGreen hover:text-white">
-          Join Now
-        </button>
+        <Button text={"Join Now"} onClickHandler={joinButtonClickHandler} />
         {/* donwn arrow */}
         <section className="mx-auto mt-4 downArrow__container">
           <ArrowLong className={"arrow"} />
           <Ellipse className={"ellipse"} />
         </section>
         {/* Join now modal */}
-        <JoinnowModal />
+        {showModal && <JoinnowModal />}
       </section>
     </>
   );

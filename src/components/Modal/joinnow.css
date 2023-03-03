@@ -13,3 +13,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.form__input {
+  border-radius: 0.75rem;
+  border: 1px solid #f0f0f0;
+  padding: 18px 24px;
+  font-size: 0.9rem;
+}

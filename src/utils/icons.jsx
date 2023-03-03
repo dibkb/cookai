@@ -29,3 +29,20 @@ export const Ellipse = ({ className }) => {
     </svg>
   );
 };
+export const Star = ({ className }) => {
+  return (
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 30 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        d="M14.3032 29.8416L10.9826 19.3776L0.532895 17.0833L9.09723 11.0371L7.55737 0.25L16.1294 6.97711L25.6476 2.58325L22.4098 12.7801L29.8115 20.8879L19.2146 20.4409L14.3032 29.8416Z"
+        fill="#C5FA2E"
+      />
+    </svg>
+  );
+};

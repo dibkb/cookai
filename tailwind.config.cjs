@@ -21,6 +21,7 @@ module.exports = {
       },
       fontSize: {
         heading: "4.2rem",
+        small: "9px",
       },
     },
   },
