@@ -1,12 +1,14 @@
 import React from "react";
-
+import "./home.css";
 const Home = () => {
   return (
     <>
-      <div className="flex mt-4">
+      <div className="flex flex-col mt-4 heading">
         <h1 className="mx-auto font-raleway text-heading font-semibold text-center select-none max-w-4xl">
           The only platform you’ll ever need to stay healthy and fit.
         </h1>
+        <small className="underline__1"></small>
+        <small className="underline__2"></small>
       </div>
       <section className="mt-8 text-center text-base text-cookTextLight leading-8 flex flex-col gap-4">
         <p>Hello there !</p>
@@ -23,19 +25,12 @@ const Home = () => {
           molecules that goes into our body decides how the body is going to
           function. A healthy diet is the stepping stone for a beautiful life.
           All of us have different nutritional requirements , so thus different
-          taste requirements. We want to assure , that our users form a habit of
-          meal planning using our super simplified application, that lets you
-          decide what you eat based on your personalized body requirements. With
-          a database of 50,000 + Recipes from around the world , create the
-          perfect meal plan for the week tracking every nutritional values that
-          you want your body to consume. We will make sure that every
-          ingredients of the recipes you’ve in you meal plan is delivered to
-          you.
+          taste requirements. We want to assure , that our users form a
         </p>
         <p>Thank You</p>
       </section>
-      <section className="flex flex-col">
-        <button className="mt-12 border mx-auto bg-cookLime px-16 py-3 rounded-lg border-cookGreen hover:bg-cookDarkGreen hover:text-white">
+      <section className="flex flex-col mt-16">
+        <button className=" border mx-auto bg-cookLime px-16 py-3 rounded-lg border-cookGreen hover:bg-cookDarkGreen hover:text-white">
           Join Now
         </button>
       </section>

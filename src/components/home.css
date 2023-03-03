@@ -1,0 +1,21 @@
+.heading {
+  position: relative;
+}
+.underline__1,
+.underline__2 {
+  position: absolute;
+  z-index: -2;
+  top: 54px;
+  left: 29%;
+  height: 21px;
+  width: 48%;
+  @apply bg-cookLightYellow;
+}
+.underline__2 {
+  z-index: -1;
+  top: 60px;
+  left: 27%;
+  height: 21px;
+  width: 42%;
+  @apply bg-cookLime;
+}
