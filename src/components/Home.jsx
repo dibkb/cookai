@@ -34,6 +34,11 @@ const Home = () => {
         </p>
         <p>Thank You</p>
       </section>
+      <section className="flex flex-col">
+        <button className="mt-12 border mx-auto bg-cookLime px-16 py-3 rounded-lg border-cookGreen hover:bg-cookDarkGreen hover:text-white">
+          Join Now
+        </button>
+      </section>
     </>
   );
 };
