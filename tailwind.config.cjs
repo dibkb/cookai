@@ -19,6 +19,9 @@ module.exports = {
         cookGrayBg: "#CCCCCC",
         cookLightBg: "#E0E0E0",
       },
+      fontSize: {
+        heading: "4.2rem",
+      },
     },
   },
   plugins: [],
