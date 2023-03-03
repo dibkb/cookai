@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../assets/logo.png";
-import { navItemsList } from "../utils/navitems";
+import logo from "../../assets/logo.png";
+import { navItemsList } from "../../utils/navitems";
 const Navbar = () => {
   const navItems = navItemsList.map(({ id, item }) => {
     return (

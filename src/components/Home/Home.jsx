@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowLong, Ellipse } from "../utils/icons";
+import { ArrowLong, Ellipse } from "../../utils/icons";
 import "./home.css";
 const Home = () => {
   return (
