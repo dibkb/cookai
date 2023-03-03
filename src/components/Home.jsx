@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowLong, Ellipse } from "../utils/icons";
 import "./home.css";
 const Home = () => {
   return (
@@ -30,9 +31,14 @@ const Home = () => {
         <p>Thank You</p>
       </section>
       <section className="flex flex-col mt-16">
-        <button className=" border mx-auto bg-cookLime px-16 py-3 rounded-lg border-cookGreen hover:bg-cookDarkGreen hover:text-white">
+        <button className=" border mx-auto bg-cookLime px-16 py-3 rounded-lg select-none border-cookGreen hover:bg-cookDarkGreen hover:text-white">
           Join Now
         </button>
+        {/* donwn arrow */}
+        <section className="mx-auto mt-4 downArrow__container">
+          <ArrowLong className={"arrow"} />
+          <Ellipse className={"ellipse"} />
+        </section>
       </section>
     </>
   );

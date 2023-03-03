@@ -19,3 +19,18 @@
   width: 42%;
   @apply bg-cookLime;
 }
+.downArrow__container {
+  position: relative;
+  width: 100px;
+  height: 45px;
+}
+.arrow {
+  position: absolute;
+  left: 50%;
+}
+.ellipse {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  z-index: -1;
+}
