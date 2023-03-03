@@ -1,0 +1,15 @@
+.modal__conatiner {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  background: rgba(98, 98, 98, 0.72);
+}
+.modal__content {
+  @apply px-16 py-8 rounded-xl max-w-3xl;
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

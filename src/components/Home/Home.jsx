@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowLong, Ellipse } from "../../utils/icons";
+import JoinnowModal from "../Modal/JoinnowModal";
 import "./home.css";
 const Home = () => {
   return (
@@ -39,6 +40,8 @@ const Home = () => {
           <ArrowLong className={"arrow"} />
           <Ellipse className={"ellipse"} />
         </section>
+        {/* Join now modal */}
+        <JoinnowModal />
       </section>
     </>
   );
