@@ -13,7 +13,7 @@ const Navbar = () => {
     );
   });
   return (
-    <nav className="fixed w-full px-4 lg:px-12 xl:px-24 2xl:px-64">
+    <nav className="fixed top-0 w-full px-4 lg:px-12 xl:px-24 2xl:px-64">
       <div className="flex items-center justify-between mt-3">
         <img src={logo} alt="" width={97} className="select-none" />
         <div className="flex gap-10">{navItems}</div>

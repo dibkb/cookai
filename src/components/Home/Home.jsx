@@ -2,20 +2,20 @@ import React from "react";
 import { ArrowLong, Ellipse } from "../../utils/icons";
 import JoinnowModal from "../Modal/JoinnowModal";
 import { Button } from "../Utils";
-import "./home.css";
+import styles from "./home.module.css";
 const Home = () => {
   const [showModal, setShowModal] = React.useState(false);
   const joinButtonClickHandler = () => {
     setShowModal(true);
   };
   return (
-    <>
-      <div className="flex flex-col mt-4 heading">
+    <main className="mt-16">
+      <div className={styles["heading"]}>
         <h1 className="mx-auto font-raleway text-heading font-semibold text-center select-none max-w-4xl">
           The only platform you’ll ever need to stay healthy and fit.
         </h1>
-        <small className="underline__1"></small>
-        <small className="underline__2"></small>
+        <small className={styles["underline__1"]}></small>
+        <small className={styles["underline__2"]}></small>
       </div>
       <section className="mt-8 text-center text-base text-cookTextLight leading-8 flex flex-col gap-4">
         <p>Hello there !</p>
@@ -39,14 +39,14 @@ const Home = () => {
       <section className="flex flex-col mt-16">
         <Button text={"Join Now"} onClickHandler={joinButtonClickHandler} />
         {/* donwn arrow */}
-        <section className="mx-auto mt-4 downArrow__container">
-          <ArrowLong className={"arrow"} />
-          <Ellipse className={"ellipse"} />
+        <section className={styles["downArrow__container"]}>
+          <ArrowLong className={styles["arrow"]} />
+          <Ellipse className={styles["ellipse"]} />
         </section>
         {/* Join now modal */}
         {showModal && <JoinnowModal />}
       </section>
-    </>
+    </main>
   );
 };
 

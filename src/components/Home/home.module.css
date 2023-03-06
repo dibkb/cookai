@@ -1,5 +1,7 @@
 .heading {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .underline__1,
 .underline__2 {
@@ -20,6 +22,7 @@
   @apply bg-cookLime;
 }
 .downArrow__container {
+  @apply mx-auto mt-6;
   position: relative;
   width: 100px;
   height: 45px;
