@@ -2,23 +2,22 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  user-select: none;
 }
 .underline__1,
 .underline__2 {
   position: absolute;
   z-index: -2;
-  top: 54px;
-  left: 29%;
+  top: 24%;
+  left: 34%;
   height: 21px;
-  width: 48%;
-  @apply bg-cookLightYellow;
+  @apply bg-cookLightYellow lg:w-[36rem] lg:left-[40%] w-[18rem] left-[18%] top-[18%];
 }
 .underline__2 {
   z-index: -1;
-  top: 60px;
-  left: 27%;
+  top: 21%;
+  left: 30%;
   height: 21px;
-  width: 42%;
   @apply bg-cookLime;
 }
 .downArrow__container {
