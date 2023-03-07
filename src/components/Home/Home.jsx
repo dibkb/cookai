@@ -9,7 +9,7 @@ const Home = () => {
     setShowModal(true);
   };
   return (
-    <main className="mt-16">
+    <main className="mt-16 px-4 lg:px-12 xl:px-24 2xl:px-64">
       <div className={styles["heading"]}>
         <h1 className="mx-auto font-raleway text-heading font-semibold text-center select-none max-w-4xl">
           The only platform you’ll ever need to stay healthy and fit.

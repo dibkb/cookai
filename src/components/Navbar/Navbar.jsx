@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
       <nav
         key={id}
-        className="cursor-pointer text-cookTextDark font-medium text-base py-2 px-4 rounded-md hover:bg-yellow-50"
+        className="text-center w-full cursor-pointer text-cookTextDark font-medium text-base py-2 px-4 rounded-md hover:bg-yellow-50"
       >
         {item}
       </nav>
@@ -29,7 +29,7 @@ const Navbar = () => {
           />
         </div>
         {showMobile && (
-          <div className="md:hidden flex flex-col absolute w-full top-12 right-0 bg-white gap-y-2 py-4">
+          <div className="md:hidden items-center flex-col absolute w-full top-12 right-0 bg-white gap-y-2 py-4">
             {navItems}
           </div>
         )}
