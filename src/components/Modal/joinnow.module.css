@@ -2,7 +2,7 @@
   z-index: 20;
   position: absolute;
   top: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: rgba(98, 98, 98, 0.72);
 }
