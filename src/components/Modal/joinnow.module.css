@@ -4,11 +4,11 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgba(98, 98, 98, 0.72);
+  background: rgba(98, 98, 98, 0.8);
 }
 .modal__content {
   z-index: 20;
-  @apply px-16 py-8 rounded-xl md:max-w-3xl w-[90%];
+  @apply px-4 py-8 md:px-12 rounded-xl md:max-w-3xl w-[90%];
   position: absolute;
   background-color: white;
   top: 50%;
