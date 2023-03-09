@@ -2,6 +2,7 @@ import React from "react";
 import Mainheading from "./Mainheading";
 import vision from "../assets/vision.png";
 import { Button } from "./Utils";
+import { Heart } from "../utils/icons";
 const Vision = () => {
   return (
     <div className="w-full px-4 lg:px-12 xl:px-24 2xl:px-64 pb-4 flex flex-col mt-24">
@@ -18,6 +19,10 @@ const Vision = () => {
         <Button text={"Join our Watchlist"} />
         <Button text={"Join Our Cause"} mode="outline" />
       </div>
+      <span className="flex items-center gap-2 mx-auto mt-12 mb-4">
+        <p>Launching soon, Stay tuned</p>
+        <Heart />
+      </span>
     </div>
   );
 };
