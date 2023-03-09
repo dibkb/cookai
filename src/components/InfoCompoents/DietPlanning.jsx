@@ -11,6 +11,7 @@ const DietPlanning = () => {
           title="Caesar Salad"
           img={saladpid}
           imgClassName="absolute z-40 top-16 left-16 mt-12"
+          titleTop={true}
         />
       </div>
       <div className="max-w-[750px] flex flex-col gap-12 lg:mt-16 text-center">
