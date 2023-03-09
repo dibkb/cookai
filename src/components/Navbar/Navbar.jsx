@@ -6,7 +6,7 @@ import Navitem from "../Navbar/Navitem";
 const Navbar = () => {
   const [showMobile, setShowMobile] = useState(false);
   return (
-    <nav className="z-10 fixed top-0 w-full px-4 lg:px-12 xl:px-24 2xl:px-64 bg-white pb-4">
+    <nav className="z-50 shadow-md fixed top-0 w-full px-4 lg:px-12 xl:px-24 2xl:px-64 bg-white pb-4">
       <div className="flex items-center justify-between mt-3 relative">
         <img src={logo} alt="" width={97} className="select-none" />
         <div className="hidden gap-10 md:flex">
