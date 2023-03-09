@@ -11,7 +11,7 @@ const Navbar = () => {
         <img src={logo} alt="" width={97} className="select-none" />
         <div className="hidden gap-10 md:flex">
           {navItemsList.map(({ id, item }) => (
-            <Navitem id={id} item={item} mobile={false} />
+            <Navitem key={id} id={id} item={item} mobile={false} />
           ))}
         </div>
         {/* navbar on smaller screens */}
@@ -26,7 +26,7 @@ const Navbar = () => {
         {showMobile && (
           <div className="md:hidden items-center flex-col absolute w-full top-12 right-0 bg-white gap-y-2 py-4">
             {navItemsList.map(({ id, item }) => (
-              <Navitem id={id} item={item} mobile={true} />
+              <Navitem key={id} id={id} item={item} mobile={true} />
             ))}
           </div>
         )}
