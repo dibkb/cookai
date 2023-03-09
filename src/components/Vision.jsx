@@ -19,8 +19,8 @@ const Vision = () => {
         <Button text={"Join our Watchlist"} />
         <Button text={"Join Our Cause"} mode="outline" />
       </div>
-      <span className="flex items-center gap-2 mx-auto mt-12 mb-4">
-        <p>Launching soon, Stay tuned</p>
+      <span className="flex items-center gap-2 mx-auto mt-12 mb-4 select-none">
+        <p className="text-zinc-700">Launching soon, Stay tuned</p>
         <Heart />
       </span>
     </div>
