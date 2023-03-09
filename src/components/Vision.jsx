@@ -15,7 +15,7 @@ const Vision = () => {
         logistics services for farms and farmers in order to revolutionize the
         Primary Sector of our country.
       </p>
-      <div className="mx-auto flex flex-col md:flex-row mb-12 mt-12 gap-12 w-[60%] md:max-w-2xl">
+      <div className="mx-auto flex flex-col md:flex-row mb-12 mt-12 gap-12 w-[80%] md:max-w-2xl">
         <Button text={"Join our Watchlist"} />
         <Button text={"Join Our Cause"} mode="outline" />
       </div>
