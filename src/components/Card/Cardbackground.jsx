@@ -1,5 +1,6 @@
 import React from "react";
 import { Star } from "../../utils/icons";
+import saladpid from "../../assets/pexels-ella-olsson-1640777 2.png";
 const Cardbackground = ({ right, title, titleTop }) => {
   let cardMiddle;
   let cardBottom;
@@ -17,6 +18,7 @@ const Cardbackground = ({ right, title, titleTop }) => {
       </p>
       <Star className={"absolute right-6 z-40 top-8"} />
       <div className="mt-12 ml-12">
+        <img src={saladpid} alt="" className="absolute z-40 top-16 left-16" />
         <div className="absolute z-20 w-[500px] h-[600px] bg-cookDarkBg rounded-xl"></div>
         <div className={cardMiddle}></div>
         <div className={cardBottom}></div>
