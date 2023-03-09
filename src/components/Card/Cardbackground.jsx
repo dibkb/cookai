@@ -18,7 +18,7 @@ const Cardbackground = ({ right, title, titleTop, img, imgClassName }) => {
       <Star className={"absolute right-6 z-40 top-8 mt-12 mr-12"} />
       <div className="mt-12 ml-12">
         <img src={img} alt="" className={imgClassName} />
-        <div className="absolute z-20 w-[500px] h-[600px] bg-cookDarkBg rounded-xl"></div>
+        <div className="absolute shadow-md z-20 w-[500px] h-[600px] bg-cookDarkBg rounded-xl"></div>
         <div className={cardMiddle}></div>
         <div className={cardBottom}></div>
       </div>
