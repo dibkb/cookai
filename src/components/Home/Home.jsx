@@ -37,7 +37,9 @@ const Home = () => {
         <p>Thank You</p>
       </section>
       <section className="flex flex-col mt-16">
-        <Button text={"Join Now"} onClickHandler={joinButtonClickHandler} />
+        <div className="max-w-xs mx-auto w-[60%]">
+          <Button text={"Join Now"} onClickHandler={joinButtonClickHandler} />
+        </div>
         {/* donwn arrow */}
         <section className={styles["downArrow__container"]}>
           <ArrowLong className={styles["arrow"]} />
