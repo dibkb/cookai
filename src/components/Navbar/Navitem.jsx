@@ -1,5 +1,4 @@
 import React from "react";
-
 const Navitem = ({ id, item, mobile }) => {
   let className;
   if (mobile) {

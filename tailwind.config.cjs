@@ -16,6 +16,8 @@ module.exports = {
         cookTextDark: "#383838",
         cookTextLight: "#656565",
         cookDarkBg: "#1B1B1B",
+        cookCardGrayBg: "#B7B7B7",
+        cookCardGrayBg_two: "#E0E0E0",
         cookGrayBg: "#CCCCCC",
         cookLightBg: "#E0E0E0",
       },

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import { navItemsList } from "../../utils/navitems";
 import { Bars3Icon } from "@heroicons/react/24/solid";
-import Navitem from "../Navitem";
+import Navitem from "../Navbar/Navitem";
 const Navbar = () => {
   const [showMobile, setShowMobile] = useState(false);
   return (
