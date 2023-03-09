@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <main className="mt-16 px-4 lg:px-12 xl:px-24 2xl:px-64">
       <div className={styles["heading"]}>
-        <h1 className="self-center w-full text-[2.7rem] md:text-[3.6rem] sm:max-w-2xl  md:max-w-3xl  text lg:text-[4.2rem] font-raleway font-semibold text-center lg:max-w-4xl">
+        <h1 className="self-center w-full text-[2.7rem] md:text-[3.6rem] sm:max-w-2xl  md:max-w-3xl  text lg:text-[4.2rem] font-raleway font-semibold text-center lg:max-w-4xl mt-4">
           The only platform you’ll ever need to stay healthy and fit.
         </h1>
         <small className={styles.underline__1}></small>
