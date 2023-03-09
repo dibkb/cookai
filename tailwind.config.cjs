@@ -25,6 +25,9 @@ module.exports = {
         heading: "4.2rem",
         small: "9px",
       },
+      zIndex: {
+        "-1": "-1",
+      },
     },
   },
   plugins: [],
