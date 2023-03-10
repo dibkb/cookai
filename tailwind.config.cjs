@@ -3,6 +3,10 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        xsm: "427px",
+        xsm_2: "394px",
+      },
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],

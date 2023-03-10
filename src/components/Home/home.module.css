@@ -7,12 +7,12 @@
 .underline__1 {
   position: absolute;
   z-index: -2;
-  @apply bg-cookLightYellow sm:h-[21px] lg:w-[36rem] lg:left-[40%] w-[12rem] sm:w-[18rem] sm:left-[18%] sm:top-[21%] md:left-[36%] md:top-[24%] left-[36%] top-[24%] h-[12px];
+  @apply bg-cookLightYellow sm:h-[21px] lg:w-[36rem] lg:left-[40%] xsm:w-[16rem] sm:w-[18rem] sm:left-[21%] sm:top-[36%] md:left-[36%] md:top-[24%] xsm:left-[36%] xsm:top-[24%] h-[12px] invisible xsm:visible;
 }
 .underline__2 {
   position: absolute;
   z-index: -1;
-  @apply bg-cookLime sm:h-[21px] lg:w-[36rem] lg:left-[36%] w-[12rem] sm:w-[18rem] sm:left-[18%] sm:top-[24%] md:left-[40%] md:top-[26%] left-[30%] top-[28%] h-[12px];
+  @apply bg-cookLime sm:h-[21px] lg:w-[36rem] lg:left-[36%] w-[12rem]  xsm:w-[16rem] sm:w-[18rem] sm:left-[18%] sm:top-[29%] md:left-[40%] md:top-[26%] xsm:left-[30%] xsm:top-[28%] h-[12px] invisible xsm:visible;
 }
 .downArrow__container {
   @apply mx-auto mt-6;
