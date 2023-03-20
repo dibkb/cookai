@@ -42,10 +42,7 @@ export const Partner = ({ setShowModal }) => {
                   hover:scale-110 hover:bg-cookLime"
                 key={JSON.stringify(element)}
                 onClick={() => {
-                  setSelected((prev) => [...prev, element]);
-                  setAllItems((prev) =>
-                    prev.filter((item) => item !== element)
-                  );
+                  setSelected([element]);
                 }}
               >
                 {element}
@@ -62,10 +59,7 @@ export const Partner = ({ setShowModal }) => {
                   hover:scale-110 bg-cookLime group"
                 key={JSON.stringify(element)}
                 onClick={() => {
-                  setAllItems((prev) => [...prev, element]);
-                  setSelected((prev) =>
-                    prev.filter((item) => item !== element)
-                  );
+                  setSelected([]);
                 }}
               >
                 <p>{element}</p>

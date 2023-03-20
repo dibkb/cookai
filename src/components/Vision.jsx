@@ -23,7 +23,7 @@ const Vision = () => {
           the Primary Sector of our country.
         </p>
         {interested && <Interested setShowModal={setInterested} />}
-        {partner && <Partner setShowModal={setInterested} />}
+        {partner && <Partner setShowModal={setPartner} />}
         <div className="mx-auto flex flex-col md:flex-row mb-12 mt-12 gap-12 w-[80%] md:max-w-2xl">
           <Button
             text={"I’m Interested"}
