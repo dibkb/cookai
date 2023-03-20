@@ -2,7 +2,7 @@ import React from "react";
 import Cardbackground from "../Card/Cardbackground";
 import heartmonitor from "../../assets/image 8.png";
 import InfoHeading from "../InfoHeading";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 const Analysis = () => {
   return (
     <Fade bottom>

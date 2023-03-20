@@ -1,6 +1,5 @@
 import React from "react";
 import { createPortal } from "react-dom";
-import { Star } from "../../utils/icons";
 import { Button } from "../Utils";
 import styles from "./joinnow.module.css";
 const JoinnowModal = ({ setShowModal }) => {

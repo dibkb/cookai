@@ -2,7 +2,7 @@ import Cardbackground from "../Card/Cardbackground";
 import saladpid from "../../assets/pexels-ella-olsson-1640777 2.png";
 import InfoHeading from "../InfoHeading";
 import React from "react";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 const DietPlanning = () => {
   return (
     <Fade bottom>

@@ -2,7 +2,7 @@ import React from "react";
 import Cardbackground from "../Card/Cardbackground";
 import InfoHeading from "../InfoHeading";
 import platfom from "../../assets/Untitled design (11) 1.png";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 const OnePlatform = () => {
   return (
     <Fade bottom>

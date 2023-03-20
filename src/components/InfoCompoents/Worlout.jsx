@@ -1,7 +1,7 @@
 import React from "react";
 import Cardbackground from "../Card/Cardbackground";
 import InfoHeading from "../InfoHeading";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import exercisepic from "../../assets/pexels-alexy-almond-3756520-removebg-preview 1.png";
 const Worlout = () => {
   return (
