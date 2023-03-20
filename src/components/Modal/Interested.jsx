@@ -9,16 +9,34 @@ const info = [
   " Workout & Food Variety",
   "Save Time",
 ];
-export const Interested = () => {
+export const Interested = ({ setShowModal }) => {
   const [page, setPage] = useState(1);
   const [allItems, setAllItems] = useState(info);
   const [selected, setSelected] = useState([]);
   const formOne = (
     <section className={styles.modal__conatiner}>
       <div className={styles.modal__content}>
-        <h1 className="font-raleway text-3xl font-semibold text-stone-700 select-none mb-2">
-          Why are you interested ?
-        </h1>
+        <main className="flex items-center justify-between">
+          <h1 className="font-raleway text-3xl font-semibold text-stone-700 select-none mb-2">
+            Why are you interested ?
+          </h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            onClick={() => setShowModal(false)}
+            className="w-6 h-6 hover:text-red-500 cursor-pointer"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </main>
+
         <small className="text-xs font-medium text-stone-500">
           Select at least two
         </small>
@@ -105,7 +123,7 @@ export const Interested = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            // onClick={() => setShowModal(false)}
+            onClick={() => setShowModal(false)}
             className="w-6 h-6 hover:text-red-500 cursor-pointer"
           >
             <path
