@@ -15,7 +15,7 @@ export const Interested = () => {
   const content = (
     <section className={styles.modal__conatiner}>
       <div className={styles.modal__content}>
-        <h1 className="font-raleway text-2xl font-semibold text-stone-700 select-none mb-2">
+        <h1 className="font-raleway text-3xl font-semibold text-stone-700 select-none mb-2">
           Why are you interested ?
         </h1>
         <small className="text-xs font-medium text-stone-500">
@@ -41,7 +41,7 @@ export const Interested = () => {
             );
           })}
         </main>
-        <main className="grid grid-cols-1 sm:grid-cols-3 gap-4 select-none mt-6">
+        <main className="grid grid-cols-1 sm:grid-cols-3 gap-4 select-none my-6">
           {selected.map((element) => {
             return (
               <span
@@ -63,7 +63,7 @@ export const Interested = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6 invisible group-hover:visible"
+                  className="w-6 h-6"
                 >
                   <path
                     strokeLinecap="round"
@@ -75,6 +75,17 @@ export const Interested = () => {
             );
           })}
         </main>
+        <p className="text-xs text-stone-500 font-medium">
+          My friends , Diet is a very important part of our life , every
+          molecules that goes into our body decides how the body is going to
+          function.
+        </p>
+        <button
+          onClick={() => {}}
+          className="w-full border bg-cookLime w-xl py-3 rounded-lg select-none border-cookGreen hover:bg-cookDarkGreen hover:text-white font-medium text-stone-700 mt-6"
+        >
+          Next
+        </button>
       </div>
     </section>
   );

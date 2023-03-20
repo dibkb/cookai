@@ -2,6 +2,7 @@
   z-index: 80;
   position: absolute;
   top: 0;
+  min-height: 800px;
   height: 100%;
   width: 100%;
   background: rgba(98, 98, 98, 0.8);
