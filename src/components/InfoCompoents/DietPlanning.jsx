@@ -5,7 +5,7 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 const DietPlanning = () => {
   return (
-    <Fade bottom>
+    <Fade direction={"right"} triggerOnce>
       <main className="flex flex-col lg:flex-row gap-y-16 items-center lg:items-start lg:gap-x-4 xl:gap-x-24">
         <div className="">
           <Cardbackground

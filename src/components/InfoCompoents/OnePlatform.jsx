@@ -5,7 +5,7 @@ import platfom from "../../assets/Untitled design (11) 1.png";
 import { Fade } from "react-awesome-reveal";
 const OnePlatform = () => {
   return (
-    <Fade bottom>
+    <Fade direction={"left"} triggerOnce>
       <main className="mt-24 flex flex-col-reverse lg:flex-row gap-y-16 items-center lg:items-start lg:gap-x-4 xl:gap-x-24">
         <div className="max-w-[750px] flex flex-col gap-12 lg:mt-16 text-center">
           <InfoHeading title="One Platform" />
