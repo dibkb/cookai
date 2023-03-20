@@ -4,10 +4,6 @@ import JoinnowModal from "../Modal/JoinnowModal";
 import { Button } from "../Utils";
 import styles from "./home.module.css";
 const Home = ({ executeScroll }) => {
-  const [showModal, setShowModal] = React.useState(false);
-  const joinButtonClickHandler = () => {
-    setShowModal(true);
-  };
   return (
     <main className="mt-16 px-4 lg:px-12 xl:px-24 2xl:px-64">
       <div className="max-w-screen-2xl mx-auto">
@@ -40,7 +36,7 @@ const Home = ({ executeScroll }) => {
         </section>
         <section className="flex flex-col mt-16">
           <div className="max-w-xs mx-auto w-[60%]">
-            <Button text={"Join Now"} onClickHandler={joinButtonClickHandler} />
+            <Button text={"Know More"} onClickHandler={executeScroll} />
           </div>
           {/* donwn arrow */}
           <section
@@ -50,8 +46,6 @@ const Home = ({ executeScroll }) => {
             <ArrowLong className={styles["arrow"]} />
             <Ellipse className={styles["ellipse"]} />
           </section>
-          {/* Join now modal */}
-          {showModal && <JoinnowModal setShowModal={setShowModal} />}
         </section>
       </div>
     </main>
