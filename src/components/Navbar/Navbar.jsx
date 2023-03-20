@@ -7,7 +7,7 @@ const Navbar = () => {
   const [showMobile, setShowMobile] = useState(false);
   return (
     <nav className="z-50 shadow-md fixed top-0 w-full px-4 lg:px-12 xl:px-24 2xl:px-64 bg-white pb-4">
-      <div className="flex items-center justify-between mt-3 relative">
+      <div className="flex items-center justify-between mt-3">
         <img src={logo} alt="" width={97} className="select-none" />
         <div className="hidden gap-10 md:flex">
           {navItemsList.map(({ id, item }) => (
@@ -24,7 +24,7 @@ const Navbar = () => {
           />
         </div>
         {showMobile && (
-          <div className="shadow-md md:hidden items-center flex-col absolute w-[100vw] top-[6vh] right-0 bg-white gap-y-2 py-4">
+          <div className="absolute shadow-md md:hidden items-center flex-col bg-white w-[100vw] top-16 sm:top-gap-y-2 py-4 left-0 overflow-hidden">
             {navItemsList.map(({ id, item }) => (
               <Navitem key={id} id={id} item={item} mobile={true} />
             ))}

@@ -10,7 +10,7 @@ const JoinnowModal = ({ setShowModal }) => {
   return createPortal(
     <section className={styles.modal__conatiner}>
       <div className={styles.modal__content}>
-        <article className="mb-4 flex gap-6 items-center justify-between">
+        <article className="mb-4 flex gap-6 items-start justify-between">
           <h2 className="font-raleway text-4xl font-semibold select-none">
             Join the Watchlist
           </h2>
