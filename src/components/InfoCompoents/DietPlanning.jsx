@@ -10,7 +10,7 @@ const DietPlanning = () => {
           right={false}
           title="Caesar Salad"
           img={saladpid}
-          imgClassName="absolute z-40 top-16 left-16 mt-12"
+          imgClassName="absolute z-40 top-[15%] left-[15%] max-w-[90%]"
           titleTop={true}
         />
       </div>

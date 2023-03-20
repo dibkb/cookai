@@ -18,7 +18,7 @@ const Worlout = () => {
           right={false}
           title="Jumping Lunges"
           img={exercisepic}
-          imgClassName="absolute z-40 bottom-0 left-16 mt-12"
+          imgClassName="absolute z-40 bottom-0 top-[1%] left-[25%] max-h-[100%]"
           titleTop={false}
         />
       </div>

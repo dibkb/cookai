@@ -21,7 +21,7 @@ const OnePlatform = () => {
         <Cardbackground
           right={false}
           img={platfom}
-          imgClassName="absolute z-40 top-0 left-0 mt-12"
+          imgClassName="absolute z-40 top-[10%] left-[7%] max-w-[90%] "
         />
       </div>
     </main>
