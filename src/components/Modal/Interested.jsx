@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { createPortal } from "react-dom";
 import styles from "./joinnow.module.css";
 const info = [
@@ -10,6 +10,8 @@ const info = [
   "Save Time",
 ];
 export const Interested = () => {
+  const [allItems, setAllItems] = useState(info);
+  const [selected, setSelected] = useState([]);
   const content = (
     <section className={styles.modal__conatiner}>
       <div className={styles.modal__content}>
@@ -20,15 +22,55 @@ export const Interested = () => {
           Select at least two
         </small>
         <main className="grid grid-cols-1 sm:grid-cols-3 gap-4 select-none mt-6">
-          {info.map((element) => {
+          {allItems.map((element) => {
             return (
               <span
                 className="cursor-pointer border border-stone-200 h-[60px] sm:h-[150px] rounded-lg flex justify-center items-center p-4 text-center font-medium text-sm text-stone-700
                     transition ease-in-out delay-50
                   hover:scale-110 hover:bg-cookLime"
                 key={JSON.stringify(element)}
+                onClick={() => {
+                  setSelected((prev) => [...prev, element]);
+                  setAllItems((prev) =>
+                    prev.filter((item) => item !== element)
+                  );
+                }}
               >
                 {element}
+              </span>
+            );
+          })}
+        </main>
+        <main className="grid grid-cols-1 sm:grid-cols-3 gap-4 select-none mt-6">
+          {selected.map((element) => {
+            return (
+              <span
+                className="cursor-pointer border border-stone-200 h-[60px] sm:h-[150px] rounded-lg flex justify-between items-center p-4 text-center font-medium text-sm text-stone-700
+                    transition ease-in-out delay-50
+                  hover:scale-110 bg-cookLime group"
+                key={JSON.stringify(element)}
+                onClick={() => {
+                  setAllItems((prev) => [...prev, element]);
+                  setSelected((prev) =>
+                    prev.filter((item) => item !== element)
+                  );
+                }}
+              >
+                <p>{element}</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6 invisible group-hover:visible"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
               </span>
             );
           })}
