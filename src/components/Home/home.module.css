@@ -17,6 +17,7 @@
 .downArrow__container {
   @apply mx-auto mt-6;
   position: relative;
+  cursor: pointer;
   width: 100px;
   height: 45px;
 }

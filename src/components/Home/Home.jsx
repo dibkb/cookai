@@ -48,7 +48,7 @@ const Home = () => {
             <Ellipse className={styles["ellipse"]} />
           </section>
           {/* Join now modal */}
-          {showModal && <JoinnowModal />}
+          {showModal && <JoinnowModal setShowModal={setShowModal} />}
         </section>
       </div>
     </main>

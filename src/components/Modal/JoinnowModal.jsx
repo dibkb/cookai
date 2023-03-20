@@ -3,18 +3,32 @@ import { createPortal } from "react-dom";
 import { Star } from "../../utils/icons";
 import { Button } from "../Utils";
 import styles from "./joinnow.module.css";
-const JoinnowModal = () => {
+const JoinnowModal = ({ setShowModal }) => {
   const submitFormHandeler = (e) => {
     e.preventDefault();
   };
   return createPortal(
     <section className={styles.modal__conatiner}>
       <div className={styles.modal__content}>
-        <article className="mb-4 flex gap-6 items-center">
+        <article className="mb-4 flex gap-6 items-center justify-between">
           <h2 className="font-raleway text-4xl font-semibold select-none">
             Join the Watchlist
           </h2>
-          <Star />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            onClick={() => setShowModal(false)}
+            className="w-6 h-6 hover:text-red-500 cursor-pointer"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
         </article>
         <p className="text-cookTextLight text-xs mb-4 select-none">
           My friends , Diet is a very important part of our life , every
