@@ -4,8 +4,10 @@ import vision from "../assets/vision.png";
 import { Button } from "./Utils";
 import { Heart } from "../utils/icons";
 import { Interested } from "./Modal/Interested";
+import { Partner } from "./Modal/Partner";
 const Vision = () => {
   const [interested, setInterested] = React.useState(false);
+  const [partner, setPartner] = React.useState(false);
   return (
     <div className="w-full px-4 lg:px-12 xl:px-24 2xl:px-64 pb-4 flex flex-col mt-24">
       <div className="max-w-screen-2xl mx-auto">
@@ -21,6 +23,7 @@ const Vision = () => {
           the Primary Sector of our country.
         </p>
         {interested && <Interested setShowModal={setInterested} />}
+        {partner && <Partner setShowModal={setInterested} />}
         <div className="mx-auto flex flex-col md:flex-row mb-12 mt-12 gap-12 w-[80%] md:max-w-2xl">
           <Button
             text={"I’m Interested"}
@@ -28,7 +31,13 @@ const Vision = () => {
               setInterested(true);
             }}
           />
-          <Button text={"Partner with Us"} mode="outline" />
+          <Button
+            text={"Join Us"}
+            mode="outline"
+            onClickHandler={() => {
+              setPartner(true);
+            }}
+          />
         </div>
         <span className="flex items-center gap-2 mx-auto mt-12 mb-4 select-none w-fit">
           <p className="text-zinc-700">Launching soon, Stay tuned</p>

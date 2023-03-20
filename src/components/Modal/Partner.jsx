@@ -1,15 +1,8 @@
 import React, { useState } from "react";
 import { createPortal } from "react-dom";
 import styles from "./joinnow.module.css";
-const info = [
-  "Weight Change",
-  "All in One Platform",
-  "AI Diet Plan",
-  "Track Body",
-  " Workout & Food Variety",
-  "Save Time",
-];
-export const Interested = ({ setShowModal }) => {
+const info = ["Web Developer", "Graphics Designer", "Food Supplier"];
+export const Partner = ({ setShowModal }) => {
   const [page, setPage] = useState(1);
   const [allItems, setAllItems] = useState(info);
   const [selected, setSelected] = useState([]);
@@ -18,7 +11,7 @@ export const Interested = ({ setShowModal }) => {
       <div className={styles.modal__content}>
         <main className="flex items-center justify-between">
           <h1 className="font-raleway text-3xl font-semibold text-stone-700 select-none mb-2">
-            Why are you interested ?
+            We are Hiring!
           </h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +31,7 @@ export const Interested = ({ setShowModal }) => {
         </main>
 
         <small className="text-xs font-medium text-stone-500">
-          Select at least two
+          Please choose a role you want to apply for
         </small>
         <main className="grid grid-cols-1 sm:grid-cols-3 gap-4 select-none mt-6">
           {allItems.map((element) => {
@@ -115,7 +108,7 @@ export const Interested = ({ setShowModal }) => {
       <div className={styles.modal__content}>
         <article className="mb-4 flex gap-6 items-start justify-between">
           <h2 className="font-raleway text-3xl font-semibold select-none">
-            We are Launching soon
+            Fill the Form
           </h2>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -157,6 +150,11 @@ export const Interested = ({ setShowModal }) => {
             type="number"
             required
             placeholder="Phone Number"
+            className={styles.form__input}
+          />
+          <input
+            type="text"
+            placeholder="LinkedIn Profile Url"
             className={styles.form__input}
           />
           <small className="text-cookTextLight text-small font-medium select-none">
