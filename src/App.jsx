@@ -1,14 +1,16 @@
-import Cardbackground from "./components/Card/Cardbackground";
+import { useRef } from "react";
 import Home from "./components/Home/Home";
 import Info from "./components/Info";
 import Navbar from "./components/Navbar/Navbar";
 import Vision from "./components/Vision";
 function App() {
+  const scrollRef = useRef(null);
+  const executeScroll = () => scrollRef.current.scrollIntoView();
   return (
     <>
       <Navbar />
-      <Home />
-      <Info />
+      <Home executeScroll={executeScroll} />
+      <Info refProp={scrollRef} />
       <Vision />
     </>
   );

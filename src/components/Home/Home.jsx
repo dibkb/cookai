@@ -3,7 +3,7 @@ import { ArrowLong, Ellipse } from "../../utils/icons";
 import JoinnowModal from "../Modal/JoinnowModal";
 import { Button } from "../Utils";
 import styles from "./home.module.css";
-const Home = () => {
+const Home = ({ executeScroll }) => {
   const [showModal, setShowModal] = React.useState(false);
   const joinButtonClickHandler = () => {
     setShowModal(true);
@@ -43,7 +43,10 @@ const Home = () => {
             <Button text={"Join Now"} onClickHandler={joinButtonClickHandler} />
           </div>
           {/* donwn arrow */}
-          <section className={styles["downArrow__container"]}>
+          <section
+            className={styles["downArrow__container"]}
+            onClick={executeScroll}
+          >
             <ArrowLong className={styles["arrow"]} />
             <Ellipse className={styles["ellipse"]} />
           </section>
