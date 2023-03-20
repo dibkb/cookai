@@ -10,7 +10,7 @@ const Analysis = () => {
           right={false}
           title="Heart rate monitor"
           img={heartmonitor}
-          imgClassName="absolute z-40 top-[12%] left-[25%] mt-12 max-w-[90%]"
+          imgClassName="absolute z-40 top-[15%] left-[20%] max-w-[60%] md:w-[600px]"
           titleTop={false}
         />
       </div>
