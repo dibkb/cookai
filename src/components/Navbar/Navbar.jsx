@@ -24,7 +24,7 @@ const Navbar = () => {
           />
         </div>
         {showMobile && (
-          <div className="md:hidden items-center flex-col absolute w-full top-12 right-0 bg-white gap-y-2 py-4">
+          <div className="shadow-md md:hidden items-center flex-col absolute w-[100vw] top-[6vh] right-0 bg-white gap-y-2 py-4">
             {navItemsList.map(({ id, item }) => (
               <Navitem key={id} id={id} item={item} mobile={true} />
             ))}
