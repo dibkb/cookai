@@ -14,12 +14,12 @@ const Cardbackground = ({ right, title, titleTop, img, imgClassName }) => {
   let starClass;
   if (titleTop) {
     titleClass =
-      "absolute z-40 text-white top-0 left-0 text-2xl border-red-200 border font-satisfy";
-    starClass = "absolute right-6 z-40 top-8 mt-12 mr-12";
+      "absolute z-40 text-white left-[15%] top-[12%] text-base sm:text-2xl font-satisfy";
+    starClass = "absolute z-40 right-[15%] top-[12%] w-[20px] sm:w-[30px]";
   } else {
     titleClass =
-      "absolute z-40 text-white bottom-20 left-6 text-2xl mt-12 ml-12 font-satisfy";
-    starClass = "absolute right-6 z-40 bottom-20 mt-12 mr-12";
+      "absolute z-40 text-white left-[15%] bottom-[6%] text-base sm:text-2xl font-satisfy";
+    starClass = "absolute z-40 right-[15%] bottom-[6%] w-[20px] sm:w-[30px]";
   }
   return (
     <div className="mt-12 flex relative w-[90vw] max-w-[600px] h-[100vw] sm:h-[700px] border">
