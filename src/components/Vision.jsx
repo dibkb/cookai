@@ -32,7 +32,7 @@ const Vision = () => {
             }}
           />
           <Button
-            text={"Join Us"}
+            text={"Partner With Us"}
             mode="outline"
             onClickHandler={() => {
               setPartner(true);

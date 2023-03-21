@@ -15,7 +15,7 @@ const Footer = () => {
         <div>
           <img src={cookImage} alt="" className="h-10 mb-4" />
           <p className="text-sm font-semibold text-stone-600">
-            Jez Salad is the pioneer of healthy fruit salad with high nutrition.
+            Muscles are torn in the gym,fed in the kitchen and built in the bed.
           </p>
         </div>
         <div className="mt-10 text-stone-800">
