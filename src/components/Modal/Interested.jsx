@@ -19,7 +19,7 @@ export const Interested = ({ setShowModal }) => {
   const submitFormHandler = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:8000/lead", {
+      const res = await fetch("https://cookai.onrender.com/lead", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -31,7 +31,7 @@ export const Interested = ({ setShowModal }) => {
           interests: selected,
         }),
       });
-      console.log(res.json());
+      setShowModal(false);
     } catch (error) {
       console.log(error);
     }

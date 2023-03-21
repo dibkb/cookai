@@ -6,6 +6,31 @@ export const Partner = ({ setShowModal }) => {
   const [page, setPage] = useState(1);
   const [allItems, setAllItems] = useState(info);
   const [selected, setSelected] = useState([]);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [linkedin, setLinkedin] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const submitFormHandler = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch("https://cookai.onrender.com/career", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phoneNumber,
+          linkedin,
+          job: selected[0],
+        }),
+      });
+      setShowModal(false);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   const formOne = (
     <section className={styles.modal__conatiner}>
       <div className={styles.modal__content}>
@@ -126,30 +151,38 @@ export const Partner = ({ setShowModal }) => {
         <form
           action="submit"
           className="flex flex-col gap-6 mt-8"
-          //   onSubmit={submitFormHandeler}
+          onSubmit={submitFormHandler}
         >
           <input
             type="text"
             required
             placeholder="Name"
             className={styles.form__input}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
           <input
             type="text"
             required
             placeholder="Email"
             className={styles.form__input}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <input
             type="number"
             required
             placeholder="Phone Number"
             className={styles.form__input}
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
           />
           <input
             type="text"
             placeholder="LinkedIn Profile Url"
             className={styles.form__input}
+            value={linkedin}
+            onChange={(e) => setLinkedin(e.target.value)}
           />
           <small className="text-cookTextLight text-small font-medium select-none">
             NOTE : Diet is a very important part of our life , every molecules
@@ -165,9 +198,7 @@ export const Partner = ({ setShowModal }) => {
               Previous
             </button>
             <button
-              // onClick={() => {
-              //   setPage();
-              // }}
+              type="submit"
               className="w-xl sm:w-1/3 border bg-cookLime py-3 rounded-lg select-none border-cookGreen hover:bg-cookDarkGreen hover:text-white font-medium text-stone-700"
             >
               Submit
