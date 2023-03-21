@@ -13,6 +13,29 @@ export const Interested = ({ setShowModal }) => {
   const [page, setPage] = useState(1);
   const [allItems, setAllItems] = useState(info);
   const [selected, setSelected] = useState([]);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const submitFormHandler = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch("http://localhost:8000/lead", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phoneNumber,
+          interests: selected,
+        }),
+      });
+      console.log(res.json());
+    } catch (error) {
+      console.log(error);
+    }
+  };
   const formOne = (
     <section className={styles.modal__conatiner}>
       <div className={styles.modal__content}>
@@ -139,23 +162,29 @@ export const Interested = ({ setShowModal }) => {
         <form
           action="submit"
           className="flex flex-col gap-6 mt-8"
-          //   onSubmit={submitFormHandeler}
+          onSubmit={submitFormHandler}
         >
           <input
             type="text"
             required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             placeholder="Name"
             className={styles.form__input}
           />
           <input
             type="text"
             required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
             className={styles.form__input}
           />
           <input
             type="number"
             required
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
             placeholder="Phone Number"
             className={styles.form__input}
           />
@@ -173,9 +202,7 @@ export const Interested = ({ setShowModal }) => {
               Previous
             </button>
             <button
-              // onClick={() => {
-              //   setPage();
-              // }}
+              type="submit"
               className="w-xl sm:w-1/3 border bg-cookLime py-3 rounded-lg select-none border-cookGreen hover:bg-cookDarkGreen hover:text-white font-medium text-stone-700"
             >
               Submit
