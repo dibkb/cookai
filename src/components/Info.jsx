@@ -10,10 +10,10 @@ const Info = (props) => {
       ref={props.refProp}
     >
       <div className="max-w-screen-2xl mx-auto">
+        <OnePlatform />
         <DietPlanning />
         <Worlout />
         <Analysis />
-        <OnePlatform />
       </div>
     </div>
   );

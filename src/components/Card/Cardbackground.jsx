@@ -22,7 +22,7 @@ const Cardbackground = ({ right, title, titleTop, img, imgClassName }) => {
     starClass = "absolute z-40 right-[15%] bottom-[6%] w-[20px] sm:w-[30px]";
   }
   return (
-    <div className="mt-0 sm:mt-12 flex relative w-[90vw] max-w-[600px] h-[100vw] sm:h-[700px]">
+    <div className="right-0 sm:right-0 relative mt-0 sm:mt-12 flex w-[90vw] max-w-[600px] h-[100vw] sm:h-[700px]">
       <p className={titleClass}>{title}</p>
       <Star className={starClass} />
       <img src={img} alt="" className={imgClassName} />

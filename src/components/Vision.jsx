@@ -15,7 +15,7 @@ const Vision = () => {
           <Mainheading title="Our Vision" />
         </div>
         <img src={vision} alt="" className="max-w-4xl mx-auto w-[90%]" />
-        <p className="text-lg text-center mt-12 leading-10 font-medium text-cookTextDark">
+        <p className="text-base text-center mt-12 leading-10 font-medium text-cookTextDark">
           Using our unlimited passion for technology, we aspire to Modernize the
           food consumption and fitness culture of the people for maintaining
           optimum health. We also look forward to create better infrastructure

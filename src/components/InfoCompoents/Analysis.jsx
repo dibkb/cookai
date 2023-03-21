@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 const Analysis = () => {
   return (
     <Fade direction={"right"} triggerOnce>
-      <main className="flex flex-col lg:flex-row gap-y-16 items-center lg:items-start lg:gap-x-4 xl:gap-x-24">
+      <main className="flex flex-col lg:flex-row gap-y-16 items-center lg:gap-x-4 xl:gap-x-24">
         <div className="">
           <Cardbackground
             right={false}
