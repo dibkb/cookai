@@ -30,7 +30,13 @@ const Home = ({ executeScroll }) => {
             function. A healthy diet is the stepping stone for a beautiful life.
             All of us have different nutritional requirements , so thus
             different taste requirements. We want to assure , that our users
-            form a
+            form a habit of meal planning using our super simplified
+            application, that lets you decide what you eat based on your
+            personalized body requirements. With a database of 50,000 + Recipes
+            from around the world , create the perfect meal plan for the week
+            tracking every nutritional values that you want your body to
+            consume. We will make sure that every ingredients of the recipes
+            you’ve in you meal plan is delivered to you.
           </p>
           <p>Thank You</p>
         </section>

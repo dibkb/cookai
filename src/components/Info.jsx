@@ -9,7 +9,7 @@ const Info = (props) => {
       className="w-full px-4 lg:px-12 xl:px-24 2xl:px-64 pb-4 flex flex-col mt-24"
       ref={props.refProp}
     >
-      <div className="max-w-screen-2xl mx-auto">
+      <div className="max-w-screen-2xl mx-auto flex flex-col gap-12">
         <OnePlatform />
         <DietPlanning />
         <Worlout />
