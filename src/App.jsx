@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import Footer from "./components/Footer";
 import Home from "./components/Home/Home";
 import Info from "./components/Info";
 import Navbar from "./components/Navbar/Navbar";
@@ -12,6 +13,7 @@ function App() {
       <Home executeScroll={executeScroll} />
       <Info refProp={scrollRef} />
       <Vision />
+      <Footer />
     </>
   );
 }
