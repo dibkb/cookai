@@ -16,6 +16,7 @@ export const Interested = ({ setShowModal }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [validated, setValidated] = useState(false);
   const [error, setError] = useState({
     name: null,
     email: null,
@@ -49,7 +50,17 @@ export const Interested = ({ setShowModal }) => {
       }
     }
   }, [phoneNumber]);
-  console.log(error);
+  useEffect(() => {
+    if (
+      error.email === false &&
+      error.name === false &&
+      error.phoneNumber === false
+    ) {
+      setValidated(true);
+    } else {
+      setValidated(false);
+    }
+  }, [error]);
   const submitFormHandler = async (e) => {
     e.preventDefault();
     try {
