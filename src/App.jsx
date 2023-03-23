@@ -9,7 +9,7 @@ function App() {
   const executeScroll = () => scrollRef.current.scrollIntoView();
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Home executeScroll={executeScroll} />
       <Info refProp={scrollRef} />
       <Vision />
