@@ -5,11 +5,14 @@ import { Button } from "./Utils";
 import { Heart } from "../utils/icons";
 import { Interested } from "./Modal/Interested";
 import { Partner } from "./Modal/Partner";
-const Vision = () => {
+const Vision = ({ scrollRefVision }) => {
   const [interested, setInterested] = React.useState(false);
   const [partner, setPartner] = React.useState(false);
   return (
-    <div className="w-full px-4 lg:px-12 xl:px-24 2xl:px-64 pb-4 flex flex-col mt-24">
+    <div
+      className="w-full px-4 lg:px-12 xl:px-24 2xl:px-64 pb-4 flex flex-col mt-24"
+      ref={scrollRefVision}
+    >
       <div className="max-w-screen-2xl mx-auto">
         <div className="w-fit mx-auto">
           <Mainheading title="Our Vision" />

@@ -8,9 +8,12 @@ import {
 import { MdLocationOn } from "react-icons/md";
 import { GrMail } from "react-icons/gr";
 import cookImage from "../assets/logo.png";
-const Footer = () => {
+const Footer = ({ scrollRefFooter }) => {
   return (
-    <div className="w-full px-4 lg:px-12 xl:px-24 2xl:px-64 py-4">
+    <div
+      className="w-full px-4 lg:px-12 xl:px-24 2xl:px-64 py-4"
+      ref={scrollRefFooter}
+    >
       <div className="mt-5 pt-5 border-t-2 border-stone-800">
         <div>
           <img src={cookImage} alt="" className="h-10 mb-4" />

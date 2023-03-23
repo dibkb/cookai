@@ -3,7 +3,7 @@ import logo from "../../assets/logo.png";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import Navitem from "../Navbar/Navitem";
-const Navbar = () => {
+const Navbar = ({ executeScrollVision, executeScrollFooter }) => {
   const [showMobile, setShowMobile] = useState(false);
   return (
     <nav className="z-50 shadow-md fixed top-0 w-full px-4 lg:px-12 xl:px-24 2xl:px-64 bg-white pb-4">
@@ -12,7 +12,7 @@ const Navbar = () => {
           <img src={logo} alt="" width={97} className="select-none" />
         </Link>
         <div className="hidden gap-10 md:flex">
-          <Navitem />
+          <Navitem executeScrollVision={executeScrollVision} />
         </div>
         {/* navbar on smaller screens */}
         <div className="md:hidden">
@@ -25,7 +25,16 @@ const Navbar = () => {
         </div>
         {showMobile && (
           <div className="absolute shadow-md md:hidden items-center flex-col bg-white w-[100vw] top-16 sm:top-gap-y-2 py-4 left-0 overflow-hidden">
-            <Navitem />
+            <Navitem
+              executeScrollVision={() => {
+                setShowMobile(false);
+                executeScrollVision();
+              }}
+              executeScrollFooter={() => {
+                setShowMobile(false);
+                executeScrollFooter();
+              }}
+            />
           </div>
         )}
       </div>
