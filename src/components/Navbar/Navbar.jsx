@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.png";
-import { navItemsList } from "../../utils/navitems";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import Navitem from "../Navbar/Navitem";
 const Navbar = () => {
@@ -10,9 +9,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between mt-3">
         <img src={logo} alt="" width={97} className="select-none" />
         <div className="hidden gap-10 md:flex">
-          {navItemsList.map(({ id, item }) => (
-            <Navitem key={id} id={id} item={item} mobile={false} />
-          ))}
+          <Navitem />
         </div>
         {/* navbar on smaller screens */}
         <div className="md:hidden">
@@ -25,9 +22,7 @@ const Navbar = () => {
         </div>
         {showMobile && (
           <div className="absolute shadow-md md:hidden items-center flex-col bg-white w-[100vw] top-16 sm:top-gap-y-2 py-4 left-0 overflow-hidden">
-            {navItemsList.map(({ id, item }) => (
-              <Navitem key={id} id={id} item={item} mobile={true} />
-            ))}
+            <Navitem />
           </div>
         )}
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import { ArrowLong, Ellipse } from "../../utils/icons";
-import JoinnowModal from "../Modal/JoinnowModal";
 import { Button } from "../Utils";
 import styles from "./home.module.css";
 const Home = ({ executeScroll }) => {
