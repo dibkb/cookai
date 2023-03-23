@@ -25,7 +25,7 @@ export const Interested = ({ setShowModal }) => {
   // // --------------------------------------form validation---------------------------------
   useEffect(() => {
     if (name !== "") {
-      if (name.length >= 1) {
+      if (name.length >= 3) {
         setError({ ...error, name: false });
       } else {
         setError({ ...error, name: true });
@@ -81,6 +81,7 @@ export const Interested = ({ setShowModal }) => {
     }
     setShowModal(false);
   };
+  console.log(error);
   const formOne = (
     <section className={styles.modal__conatiner}>
       <div className={styles.modal__content}>
@@ -104,7 +105,6 @@ export const Interested = ({ setShowModal }) => {
             />
           </svg>
         </main>
-
         <small className="text-xs font-medium text-stone-500">
           Select at least two
         </small>
@@ -206,7 +206,7 @@ export const Interested = ({ setShowModal }) => {
         </p>
         <form
           action="submit"
-          className="flex flex-col gap-6 mt-8"
+          className="flex flex-col gap-2 mt-8"
           onSubmit={submitFormHandler}
         >
           <input
@@ -217,6 +217,13 @@ export const Interested = ({ setShowModal }) => {
             placeholder="Name"
             className={styles.form__input}
           />
+          <small
+            className={`text-[10px] font-medium text-red-600 ml-2
+          ${error.name ? "visible" : "invisible"}
+          `}
+          >
+            Name should be atleast 3 characters
+          </small>
           <input
             type="text"
             required
@@ -225,6 +232,13 @@ export const Interested = ({ setShowModal }) => {
             placeholder="Email"
             className={styles.form__input}
           />
+          <small
+            className={`text-[10px] font-medium text-red-600 ml-2
+          ${error.email ? "visible" : "invisible"}
+          `}
+          >
+            Not a vaild email
+          </small>
           <input
             type="number"
             required
@@ -233,6 +247,13 @@ export const Interested = ({ setShowModal }) => {
             placeholder="Phone Number"
             className={styles.form__input}
           />
+          <small
+            className={`text-[10px] font-medium text-red-600 ml-2
+          ${error.phoneNumber ? "visible" : "invisible"}
+          `}
+          >
+            Not a valid phone number
+          </small>
           <small className="text-cookTextLight text-small font-medium select-none">
             NOTE : Diet is a very important part of our life , every molecules
             thatides hgoing to function.
@@ -246,12 +267,22 @@ export const Interested = ({ setShowModal }) => {
             >
               Previous
             </button>
-            <button
-              type="submit"
-              className="w-xl sm:w-1/3 border bg-cookLime py-3 rounded-lg select-none border-cookGreen hover:bg-cookDarkGreen hover:text-white font-medium text-stone-700"
-            >
-              Submit
-            </button>
+            {validated && (
+              <button
+                type="submit"
+                className="w-xl sm:w-1/3 border bg-cookLime py-3 rounded-lg select-none border-cookGreen hover:bg-cookDarkGreen hover:text-white font-medium text-stone-700"
+              >
+                Submit
+              </button>
+            )}
+            {!validated && (
+              <button
+                disabled={true}
+                className="w-xl sm:w-1/3 border bg-cookLime py-3 rounded-lg select-none border-cookGreen font-medium text-stone-700 opacity-60"
+              >
+                Submit
+              </button>
+            )}
           </div>
         </form>
       </div>
