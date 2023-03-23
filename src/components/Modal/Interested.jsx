@@ -215,7 +215,9 @@ export const Interested = ({ setShowModal }) => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Name"
-            className={styles.form__input}
+            className={`rounded-md border text-sm font-medium py-4 px-6 ${
+              error.name ? "border-red-600 bg-red-50" : ""
+            }`}
           />
           <small
             className={`text-[10px] font-medium text-red-600 ml-2
@@ -230,7 +232,9 @@ export const Interested = ({ setShowModal }) => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
-            className={styles.form__input}
+            className={`rounded-md border text-sm font-medium py-4 px-6 ${
+              error.email ? "border-red-600 bg-red-50" : ""
+            }`}
           />
           <small
             className={`text-[10px] font-medium text-red-600 ml-2
@@ -245,7 +249,9 @@ export const Interested = ({ setShowModal }) => {
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
             placeholder="Phone Number"
-            className={styles.form__input}
+            className={`rounded-md border text-sm font-medium py-4 px-6 ${
+              error.phoneNumber ? "border-red-600 bg-red-50" : ""
+            }`}
           />
           <small
             className={`text-[10px] font-medium text-red-600 ml-2
