@@ -81,7 +81,6 @@ export const Interested = ({ setShowModal }) => {
     }
     setShowModal(false);
   };
-  console.log(error);
   const formOne = (
     <section className={styles.modal__conatiner}>
       <div className={styles.modal__content}>

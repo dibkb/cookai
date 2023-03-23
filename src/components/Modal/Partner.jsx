@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import styles from "./joinnow.module.css";
 const info = ["Web Developer", "Graphics Designer", "Food Supplier"];
@@ -10,6 +10,66 @@ export const Partner = ({ setShowModal }) => {
   const [email, setEmail] = useState("");
   const [linkedin, setLinkedin] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [validated, setValidated] = useState(false);
+  const [error, setError] = useState({
+    name: null,
+    email: null,
+    linkedin: null,
+    phoneNumber: null,
+  });
+  useEffect(() => {
+    if (name !== "") {
+      if (name.length >= 3) {
+        setError({ ...error, name: false });
+      } else {
+        setError({ ...error, name: true });
+      }
+    }
+  }, [name]);
+  useEffect(() => {
+    if (email !== "") {
+      if (email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+        setError({ ...error, email: false });
+      } else {
+        setError({ ...error, email: true });
+      }
+    }
+  }, [email]);
+  useEffect(() => {
+    if (linkedin !== "") {
+      if (
+        linkedin.match(
+          /^(http[s]?:\/\/)?([w]{3}\.)?[a-z0-9]+\.[a-z]{2,3}(\.[a-z]{2})?([\/]?[a-zA-Z0-9#]+\/?)*$/
+        )
+      ) {
+        setError({ ...error, linkedin: false });
+      } else {
+        setError({ ...error, linkedin: true });
+      }
+    }
+  }, [linkedin]);
+  useEffect(() => {
+    if (phoneNumber !== "") {
+      if (phoneNumber.length >= 10) {
+        setError({ ...error, phoneNumber: false });
+      } else {
+        setError({ ...error, phoneNumber: true });
+      }
+    }
+  }, [phoneNumber]);
+  useEffect(() => {
+    if (
+      error.email === false &&
+      error.name === false &&
+      error.phoneNumber === false &&
+      error.linkedin === false
+    ) {
+      setValidated(true);
+    } else {
+      setValidated(false);
+    }
+  }, [error]);
+  console.log(error);
   const submitFormHandler = async (e) => {
     e.preventDefault();
     try {
@@ -150,40 +210,76 @@ export const Partner = ({ setShowModal }) => {
         </p>
         <form
           action="submit"
-          className="flex flex-col gap-6 mt-8"
+          className="flex flex-col gap-2 mt-8"
           onSubmit={submitFormHandler}
         >
           <input
             type="text"
             required
             placeholder="Name"
-            className={styles.form__input}
+            className={`rounded-md border text-sm font-medium py-4 px-6 ${
+              error.name ? "border-red-600 bg-red-50" : ""
+            }`}
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
+          <small
+            className={`text-[10px] font-medium text-red-600 ml-2
+          ${error.name ? "visible" : "invisible"}
+          `}
+          >
+            Name should be atleast 3 characters
+          </small>
           <input
             type="text"
             required
             placeholder="Email"
-            className={styles.form__input}
+            className={`rounded-md border text-sm font-medium py-4 px-6 ${
+              error.email ? "border-red-600 bg-red-50" : ""
+            }`}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
+          <small
+            className={`text-[10px] font-medium text-red-600 ml-2
+          ${error.email ? "visible" : "invisible"}
+          `}
+          >
+            Not a vaild email
+          </small>
           <input
             type="number"
             required
             placeholder="Phone Number"
-            className={styles.form__input}
+            className={`rounded-md border text-sm font-medium py-4 px-6 ${
+              error.phoneNumber ? "border-red-600 bg-red-50" : ""
+            }`}
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
           />
+          <small
+            className={`text-[10px] font-medium text-red-600 ml-2
+          ${error.phoneNumber ? "visible" : "invisible"}
+          `}
+          >
+            Not a valid phone number
+          </small>
           <input
             type="text"
             placeholder="LinkedIn Profile Url"
-            className={styles.form__input}
+            className={`rounded-md border text-sm font-medium py-4 px-6 ${
+              error.linkedin ? "border-red-600 bg-red-50" : ""
+            }`}
             value={linkedin}
             onChange={(e) => setLinkedin(e.target.value)}
           />
+          <small
+            className={`text-[10px] font-medium text-red-600 ml-2
+          ${error.linkedin ? "visible" : "invisible"}
+          `}
+          >
+            Not a valid url
+          </small>
           <small className="text-cookTextLight text-small font-medium select-none">
             NOTE : Diet is a very important part of our life , every molecules
             thatides hgoing to function.
@@ -197,12 +293,22 @@ export const Partner = ({ setShowModal }) => {
             >
               Previous
             </button>
-            <button
-              type="submit"
-              className="w-xl sm:w-1/3 border bg-cookLime py-3 rounded-lg select-none border-cookGreen hover:bg-cookDarkGreen hover:text-white font-medium text-stone-700"
-            >
-              Submit
-            </button>
+            {validated && (
+              <button
+                type="submit"
+                className="w-xl sm:w-1/3 border bg-cookLime py-3 rounded-lg select-none border-cookGreen hover:bg-cookDarkGreen hover:text-white font-medium text-stone-700"
+              >
+                Submit
+              </button>
+            )}
+            {!validated && (
+              <button
+                disabled={true}
+                className="w-xl sm:w-1/3 border bg-cookLime py-3 rounded-lg select-none border-cookGreen font-medium text-stone-700 opacity-60"
+              >
+                Submit
+              </button>
+            )}
           </div>
         </form>
       </div>
