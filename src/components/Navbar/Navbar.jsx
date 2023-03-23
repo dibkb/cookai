@@ -12,7 +12,10 @@ const Navbar = ({ executeScrollVision, executeScrollFooter }) => {
           <img src={logo} alt="" width={97} className="select-none" />
         </Link>
         <div className="hidden gap-10 md:flex">
-          <Navitem executeScrollVision={executeScrollVision} />
+          <Navitem
+            executeScrollVision={executeScrollVision}
+            executeScrollFooter={executeScrollFooter}
+          />
         </div>
         {/* navbar on smaller screens */}
         <div className="md:hidden">
