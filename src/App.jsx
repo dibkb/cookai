@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Footer from "./components/Footer";
 import Home from "./components/Home/Home";
 import Info from "./components/Info";
-import Navbarapp from "./components/Navbar/Navbarapp";
+import Navbar from "./components/Navbar/Navbar";
 import Vision from "./components/Vision";
 function App() {
   const { element } = useParams();
@@ -28,10 +28,7 @@ function App() {
   };
   return (
     <>
-      <Navbarapp
-        executeScrollVision={executeScrollVision}
-        executeScrollFooter={executeScrollFooter}
-      />
+      <Navbar />
       <Home executeScroll={executeScroll} />
       <Info refProp={scrollRef} />
       <Vision scrollRefVision={scrollRefVision} />
