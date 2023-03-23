@@ -69,7 +69,6 @@ export const Partner = ({ setShowModal }) => {
       setValidated(false);
     }
   }, [error]);
-  console.log(error);
   const submitFormHandler = async (e) => {
     e.preventDefault();
     try {
