@@ -26,10 +26,10 @@ export const Partner = ({ setShowModal }) => {
           job: selected[0],
         }),
       });
-      setShowModal(false);
     } catch (error) {
       console.log(error);
     }
+    setShowModal(false);
   };
   const formOne = (
     <section className={styles.modal__conatiner}>

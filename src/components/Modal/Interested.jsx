@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import styles from "./joinnow.module.css";
 const info = [
@@ -16,6 +16,40 @@ export const Interested = ({ setShowModal }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [error, setError] = useState({
+    name: null,
+    email: null,
+    phoneNumber: null,
+  });
+  // // --------------------------------------form validation---------------------------------
+  useEffect(() => {
+    if (name !== "") {
+      if (name.length >= 1) {
+        setError({ ...error, name: false });
+      } else {
+        setError({ ...error, name: true });
+      }
+    }
+  }, [name]);
+  useEffect(() => {
+    if (email !== "") {
+      if (email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+        setError({ ...error, email: false });
+      } else {
+        setError({ ...error, email: true });
+      }
+    }
+  }, [email]);
+  useEffect(() => {
+    if (phoneNumber !== "") {
+      if (phoneNumber.length >= 10) {
+        setError({ ...error, phoneNumber: false });
+      } else {
+        setError({ ...error, phoneNumber: true });
+      }
+    }
+  }, [phoneNumber]);
+  console.log(error);
   const submitFormHandler = async (e) => {
     e.preventDefault();
     try {
@@ -31,16 +65,16 @@ export const Interested = ({ setShowModal }) => {
           interests: selected,
         }),
       });
-      setShowModal(false);
     } catch (error) {
       console.log(error);
     }
+    setShowModal(false);
   };
   const formOne = (
     <section className={styles.modal__conatiner}>
       <div className={styles.modal__content}>
         <main className="flex items-center justify-between">
-          <h1 className="font-raleway text-3xl font-semibold text-stone-700 select-none mb-2">
+          <h1 className="font-raleway text-xl sm:text-3xl font-semibold text-stone-700 select-none mb-2">
             Why are you interested ?
           </h1>
           <svg
