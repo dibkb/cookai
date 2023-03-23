@@ -10,6 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route index path=":element" element={<App />} />
         <Route path="timeline" element={<Timeline />} />
       </Routes>
     </BrowserRouter>

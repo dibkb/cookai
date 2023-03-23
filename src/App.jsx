@@ -1,10 +1,21 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Footer from "./components/Footer";
 import Home from "./components/Home/Home";
 import Info from "./components/Info";
-import Navbar from "./components/Navbar/Navbar";
+import Navbarapp from "./components/Navbar/Navbarapp";
 import Vision from "./components/Vision";
 function App() {
+  const { element } = useParams();
+  useEffect(() => {
+    if (element === "vision") {
+      executeScrollVision();
+    }
+    if (element === "contact") {
+      executeScrollFooter();
+    }
+  }, [element]);
+
   const scrollRef = useRef(null);
   const executeScroll = () => scrollRef.current.scrollIntoView();
   const scrollRefVision = useRef(null);
@@ -17,7 +28,7 @@ function App() {
   };
   return (
     <>
-      <Navbar
+      <Navbarapp
         executeScrollVision={executeScrollVision}
         executeScrollFooter={executeScrollFooter}
       />
