@@ -3,7 +3,13 @@ import { BsFillRocketFill, BsDatabaseFill } from "react-icons/bs";
 import { RiTeamFill } from "react-icons/ri";
 import { TfiWorld } from "react-icons/tfi";
 import { AiFillAppstore } from "react-icons/ai";
-import { MemberIkraj, MemberIrhad, MemberOne, MemberSatyajeet } from "./Team";
+import {
+  MemberIkraj,
+  MemberIrhad,
+  MemberOne,
+  MemberSatyajeet,
+  MemberDK,
+} from "./Team";
 export const Idea = () => {
   return (
     <div className="flex flex-col gap-8 text-center items-center mt-12">
@@ -52,6 +58,7 @@ export const Team = () => {
         <p className="font-semibold italic">May 2021</p>
         <div className="flex justify-center gap-20 my-12">
           <MemberOne />
+          <MemberDK />
           <MemberIkraj />
           <MemberIrhad />
           <MemberSatyajeet />

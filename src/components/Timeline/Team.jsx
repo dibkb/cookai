@@ -95,3 +95,26 @@ export const MemberSatyajeet = () => {
     </div>
   );
 };
+export const MemberDK = () => {
+  return (
+    <div>
+      <div
+        style={{
+          backgroundPosition: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPositionX: "center",
+          backgroundPositionY: "center",
+          //   backgroundImage: "",
+        }}
+        className="border h-[150px] w-[150px] rounded-full bg-stone-700"
+      />
+      <p className="mt-3 font-medium">Dibas K Borborah</p>
+      <p className="mt-3 italic text-sm">Founder</p>
+      <main className="mt-3 flex justify-center">
+        <a href="https://www.linkedin.com/in/dibkb/" className="">
+          <AiFillLinkedin size={30} />
+        </a>
+      </main>
+    </div>
+  );
+};
