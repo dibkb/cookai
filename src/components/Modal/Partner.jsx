@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { CountrySelect } from "../CountrySelector";
+import { SuccessPortal, FailurePortal } from "./Modal";
 import styles from "./joinnow.module.css";
 const info = ["Web Developer", "Graphics Designer", "Food Supplier"];
 export const Partner = ({ setShowModal }) => {
@@ -13,6 +14,12 @@ export const Partner = ({ setShowModal }) => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [validated, setValidated] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState({});
+  const [serverError, setSeverError] = useState("");
+  const [showPortal, setShowPortal] = useState(null);
+  const buttonClickHandler = () => {
+    setShowPortal(null);
+    setShowModal(false);
+  };
   const [error, setError] = useState({
     name: null,
     email: null,
@@ -88,10 +95,10 @@ export const Partner = ({ setShowModal }) => {
           country: selectedCountry,
         }),
       });
+      setShowPortal("success");
     } catch (error) {
-      console.log(error);
+      setShowPortal("failure");
     }
-    setShowModal(false);
   };
   const formOne = (
     <section className={styles.modal__conatiner}>
@@ -324,6 +331,15 @@ export const Partner = ({ setShowModal }) => {
   );
   return createPortal(
     <>
+      {showPortal === "failure" && (
+        <FailurePortal
+          buttonClickHandler={buttonClickHandler}
+          message={serverError}
+        />
+      )}
+      {showPortal === "success" && (
+        <SuccessPortal buttonClickHandler={buttonClickHandler} />
+      )}
       {page === 1 && formOne}
       {page === 2 && formTwo}
     </>,

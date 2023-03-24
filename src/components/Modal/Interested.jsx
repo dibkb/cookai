@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { SuccessPortal, FailurePortal } from "./Modal";
 import { createPortal } from "react-dom";
 import { CountrySelect } from "../CountrySelector";
 import styles from "./joinnow.module.css";
@@ -24,6 +25,12 @@ export const Interested = ({ setShowModal }) => {
     email: null,
     phoneNumber: null,
   });
+  const [serverError, setSeverError] = useState("");
+  const [showPortal, setShowPortal] = useState(null);
+  const buttonClickHandler = () => {
+    setShowPortal(null);
+    setShowModal(false);
+  };
   // // --------------------------------------form validation---------------------------------
   useEffect(() => {
     if (name !== "") {
@@ -79,10 +86,10 @@ export const Interested = ({ setShowModal }) => {
           country: selectedCountry,
         }),
       });
+      setShowPortal("success");
     } catch (error) {
-      console.log(error);
+      setShowPortal("failure");
     }
-    setShowModal(false);
   };
   const formOne = (
     <section className={styles.modal__conatiner}>
@@ -304,6 +311,15 @@ export const Interested = ({ setShowModal }) => {
   );
   return createPortal(
     <>
+      {showPortal === "failure" && (
+        <FailurePortal
+          buttonClickHandler={buttonClickHandler}
+          message={serverError}
+        />
+      )}
+      {showPortal === "success" && (
+        <SuccessPortal buttonClickHandler={buttonClickHandler} />
+      )}
       {page === 1 && formOne}
       {page === 2 && formTwo}
     </>,
