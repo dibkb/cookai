@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
+import { CountrySelect } from "../CountrySelector";
 import styles from "./joinnow.module.css";
 const info = [
   "Weight Change",
@@ -17,6 +18,7 @@ export const Interested = ({ setShowModal }) => {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [validated, setValidated] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState({});
   const [error, setError] = useState({
     name: null,
     email: null,
@@ -74,6 +76,7 @@ export const Interested = ({ setShowModal }) => {
           email,
           phoneNumber,
           interests: selected,
+          country: selectedCountry,
         }),
       });
     } catch (error) {
@@ -242,16 +245,22 @@ export const Interested = ({ setShowModal }) => {
           >
             Not a vaild email
           </small>
-          <input
-            type="number"
-            required
-            value={phoneNumber}
-            onChange={(e) => setPhoneNumber(e.target.value)}
-            placeholder="Phone Number"
-            className={`rounded-md border text-sm font-medium py-4 px-6 ${
-              error.phoneNumber ? "border-red-600 bg-red-50" : ""
-            }`}
-          />
+          <div className="flex gap-4 flex-col">
+            <CountrySelect
+              selectedCountry={selectedCountry}
+              setSelectedCountry={setSelectedCountry}
+            />
+            <input
+              type="number"
+              required
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
+              placeholder="Phone Number"
+              className={`flex-grow rounded-md border text-sm font-medium py-4 px-6 ${
+                error.phoneNumber ? "border-red-600 bg-red-50" : ""
+              }`}
+            />
+          </div>
           <small
             className={`text-[10px] font-medium text-red-600 ml-2
           ${error.phoneNumber ? "visible" : "invisible"}
