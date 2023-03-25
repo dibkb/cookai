@@ -23,6 +23,7 @@ const OnePlatform = () => {
         <div className="">
           <Cardbackground
             right={false}
+            title="One platform"
             img={platfom}
             imgClassName="absolute z-40 top-[10%] left-[7%] max-w-[90%] "
           />
