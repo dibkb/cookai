@@ -91,9 +91,10 @@ export const Website = () => {
         </p>
       </section>
       <p className="font-medium text-stone-700 leading-8 text-sm">
-        Recalling the quote, we launched this website on March 25, 2023 - "Start
-        where you are. Use what you have. Do what you can". Our team is about to
-        embark on an unexpected journey, which we are very thrilled about.
+        In keeping with the quotation, we published this website on March 25,
+        2023 - "Start where you are. Use what you have. Do what you can". We are
+        quite excited about the amazing ride that our team is about to embark
+        on.
       </p>
     </div>
   );
