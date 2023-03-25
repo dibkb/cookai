@@ -7,9 +7,9 @@ const info = [
   "Weight Change",
   "All in One Platform",
   "AI Diet Plan",
-  "Track Body",
+  "Track Body Thoroughly",
   " Workout & Food Variety",
-  "Save Time",
+  "Save Fitness Time",
 ];
 export const Interested = ({ setShowModal }) => {
   const [page, setPage] = useState(1);

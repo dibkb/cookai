@@ -19,7 +19,7 @@ export const Idea = () => {
           <p className="text-sm">Idea</p>
         </main>
         <p className="font-semibold italic absolute left-[150px] whitespace-nowrap text-xs">
-          May 2021
+          May 2022
         </p>
       </section>
       <section className="font-medium text-stone-700 leading-8 text-sm flex flex-col gap-y-6">
@@ -65,7 +65,7 @@ export const Team = () => {
           <p className="text-sm">Team</p>
         </main>
         <p className="font-semibold italic absolute left-[150px] whitespace-nowrap text-xs">
-          May 2021
+          December 2022
         </p>
       </section>
       <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 sm:gap-x-16 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-10">
@@ -107,7 +107,7 @@ export const Database = () => {
           <p className="text-sm">Database</p>
         </main>
         <p className="font-semibold italic absolute left-[150px] whitespace-nowrap text-xs">
-          TBD
+          Work in progress
         </p>
       </section>
       <p className="font-medium text-stone-700 leading-8 text-sm"></p>
@@ -123,7 +123,7 @@ export const App = () => {
           <p className="text-sm">App</p>
         </main>
         <p className="font-semibold italic absolute left-[150px] whitespace-nowrap text-xs">
-          TBD
+          Work in progress
         </p>
       </section>
       <p className="font-medium text-stone-700 leading-8 text-sm"></p>
