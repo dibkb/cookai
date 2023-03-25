@@ -30,11 +30,15 @@ const Footer = ({ scrollRefFooter }) => {
             </span>
             <span className="flex items-center gap-2">
               <GrMail size={20} />
-              <p>cook.ai.reach.com</p>
+              <p>
+                <a href="mailto:cook.ai.reach.com">cook.ai.reach.com</a>
+              </p>
             </span>
             <span className="flex items-center gap-2">
               <AiFillPhone size={20} />
-              <p>+91 8822436250</p>
+              <p>
+                <a href="tel:+918822436250">+91 8822436250</a>
+              </p>
             </span>
           </main>
         </div>
