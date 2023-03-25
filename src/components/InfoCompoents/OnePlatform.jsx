@@ -12,12 +12,12 @@ const OnePlatform = () => {
           <p className="text-cookTextLight leading-8 ">
             Cook. AI is a one-stop platform that assists users in creating or
             selecting a meal plan and shopping accordingly. Users can track and
-            analyse their nutritional intakes to ensure that micro and
-            macronutrients are consumed in a balanced ratio. We use and share
-            that data with our fitness centres to provide a comprehensive
-            Data-Driven Workout Program. Everything is accessible through the
-            same app for the smoothest body size transitions and eating exactly
-            what is required.
+            analyze their nutritional intakes to ensure that everything is
+            consumed in a balanced ratio OR the user can even get automatic
+            recommendation from our AI. We use and share that data with our
+            fitness centres to provide a comprehensive Data-Driven Workout
+            Program. Everything is accessible through the same app for the
+            smoothest body size transitions and optimum diets.
           </p>
         </div>
         <div className="">

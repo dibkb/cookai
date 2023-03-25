@@ -10,11 +10,13 @@ const Preventdisease = () => {
         <div className="max-w-[750px] flex flex-col gap-12 lg:mt-16 text-center">
           <InfoHeading title="Prevent Chronic Disease" />
           <p className="text-cookTextLight leading-8 ">
-            Realistic modifications of diet, workout and lifestyle can prevent
-            most Heart Disease, Stroke, Diabetes, different varieties of cancer
-            and many more such diseases. We at Cook.AI ensures that your body
-            consumes the best diet possible based on your lifestyle, body need
-            and workout timings.
+            The majority of Heart Disease, Stroke, Diabetes, many types of
+            cancer, and many other such ailments can be avoided by making
+            realistic changes to food, exercise, and lifestyle. In order to
+            avoid you from having an unbalanced diet depending on your
+            lifestyle, body needs, and workout schedule, we at Cook.AI want to
+            make sure that your body consumes the optimal diet possible. It will
+            undoubtedly lower the likelihood of catching such an illness.
           </p>
         </div>
         <div className="">

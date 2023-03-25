@@ -115,7 +115,7 @@ export const Interested = ({ setShowModal }) => {
           </svg>
         </main>
         <small className="text-xs font-medium text-stone-500">
-          Select at least two
+          Select at least two reasons.
         </small>
         <main className="grid grid-cols-1 sm:grid-cols-3 gap-4 select-none mt-6">
           {allItems.map((element) => {
@@ -171,16 +171,11 @@ export const Interested = ({ setShowModal }) => {
             );
           })}
         </main>
-        <p className="text-xs text-stone-500 font-medium">
-          My friends , Diet is a very important part of our life , every
-          molecules that goes into our body decides how the body is going to
-          function.
-        </p>
         <button
           onClick={() => {
             setPage(2);
           }}
-          className="w-full sm:w-1/3 border bg-cookLime w-xl py-3 rounded-lg select-none border-cookGreen hover:bg-cookDarkGreen hover:text-white font-medium text-stone-700 mt-6"
+          className="w-full sm:w-1/3 border bg-cookLime w-xl py-3 rounded-lg select-none border-cookGreen hover:bg-cookDarkGreen hover:text-white font-medium text-stone-700"
         >
           Next
         </button>
@@ -275,10 +270,10 @@ export const Interested = ({ setShowModal }) => {
           >
             Not a valid phone number
           </small>
-          <small className="text-cookTextLight text-small font-medium select-none">
+          {/* <small className="text-cookTextLight text-small font-medium select-none">
             NOTE : Diet is a very important part of our life , every molecules
             thatides hgoing to function.
-          </small>
+          </small> */}
           <div className="flex flex-col sm:flex-row gap-4">
             <button
               onClick={() => {

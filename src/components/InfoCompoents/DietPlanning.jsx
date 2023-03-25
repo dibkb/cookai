@@ -19,11 +19,13 @@ const DietPlanning = () => {
         <div className="max-w-[750px] flex flex-col gap-12 lg:mt-16 text-center">
           <InfoHeading title="Diet Planning" />
           <p className="text-cookTextLight leading-8 ">
-            Get every detail about the recipe you are about to cook. Ranging
-            from Ingredients, Nutritional values and Methods to cook it
-            perfectly. Ensure that your body doesn't miss life supporting
-            molecules by tracking them through our App and Become a master of
-            the recipe even if you had never prepared it before !
+            Get every detail about the recipe you are about to cook froma
+            database of 50,000+ dishes. Ranging from ingredients, nutritional
+            values and methods to cook it perfectly. Ensure that your body
+            doesn't miss life supporting molecules by automatically tracking
+            them through our App. Gone are the days of manually calculating your
+            calories and other metrics, as our AI makes it easy and smooth for
+            you to choose any recipe that really suits your body!
           </p>
         </div>
       </main>

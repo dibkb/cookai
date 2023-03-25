@@ -26,15 +26,21 @@ const Home = ({ executeScroll }) => {
           <p>
             My friends, Diet is a very important part of our life, every
             molecules that goes into our body decides how the body is going to
-            function. A healthy diet is the stepping stone for a beautiful life.
-            We will ensure that our users form a habit of meal planning using
-            our super simplified application, that lets you decide what you
-            shall eat based on your personalized nutritional and taste
+            function. A poor diet plan often leads to severe health issues like
+            being overweight or obese, tooth decay, high blood pressure, high
+            cholesterol, heart disease and stroke, type-2 diabetes,
+            osteoporosis, depression and even some cancers.
+          </p>
+          <p>
+            But a healthy diet is the stepping stone for a beautiful life. We at
+            Cook.AI want to ensure that our users form a habit of meal planning
+            using our super simplified application, that lets you decide what
+            you shall eat, based on your personalized nutritional and taste
             requirements. With a database of 50,000 + Recipes from around the
-            world, Create the perfect meal plan for the week automatically
-            tracking every nutritional values that you want your body to
-            consume. Every ingredients of the recipes in your meal plan will be
-            delivered to your doorstep!
+            world, create the perfect meal plan for the week, automatically
+            tracking nutritional values that you want your body to consume.
+            Every ingredients of the recipes in your meal plan will be delivered
+            to your doorstep!
           </p>
           <p>Thank You</p>
         </section>

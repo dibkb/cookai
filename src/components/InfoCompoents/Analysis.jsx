@@ -19,12 +19,13 @@ const Analysis = () => {
         <div className="max-w-[750px] flex flex-col gap-12 lg:mt-16 text-center">
           <InfoHeading title="In-Depth Assistance" />
           <p className="text-cookTextLight leading-8 ">
-            Get round-the-clock assistance on sleep, stress level, medications,
-            genome, microbiome, and glucose, body composition, adherence, weight
-            change rate trends, hunger, and fatigue. Every important detail of
-            your body will be tracked, and only plan will be assigned based on
-            your body metrics. It's up to you whether or not you'll keep to your
-            motivation!
+            Get round-the-clock assistance as our AI process metrics including
+            calories, macro and micro nutrients, vitamins, sleep, stress level,
+            genome, medications, microbiome, glucose, body composition,
+            adherence, weight change rate trends, hunger, fatigue and many more.
+            Every important detail of your body will be tracked, and the plan
+            will be assigned based on the analysis of your body. It's just up to
+            you whether or not you'll keep to your motivation!
           </p>
         </div>
       </main>

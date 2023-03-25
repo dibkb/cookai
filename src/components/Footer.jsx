@@ -18,7 +18,8 @@ const Footer = ({ scrollRefFooter }) => {
         <div>
           <img src={cookImage} alt="" className="h-10 mb-4" />
           <p className="text-sm font-semibold text-stone-600">
-            Muscles are torn in the gym,fed in the kitchen and built in the bed.
+            Muscles are torn in the gym, fed in the kitchen and built in the
+            bed.
           </p>
         </div>
         <div className="mt-10 text-stone-800">
