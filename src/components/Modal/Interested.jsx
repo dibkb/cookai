@@ -29,6 +29,7 @@ export const Interested = ({ setShowModal }) => {
   const [showPortal, setShowPortal] = useState(null);
   const buttonClickHandler = () => {
     setShowPortal(null);
+    setShowModal(false);
   };
   // // --------------------------------------form validation---------------------------------
   useEffect(() => {
@@ -71,7 +72,7 @@ export const Interested = ({ setShowModal }) => {
   }, [error]);
   const submitFormHandler = async (e) => {
     e.preventDefault();
-    setShowModal(false);
+    setValidated(false);
     try {
       const res = await fetch("https://cookai.onrender.com/lead", {
         method: "POST",
