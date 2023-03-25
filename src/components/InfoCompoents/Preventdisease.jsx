@@ -22,7 +22,7 @@ const Preventdisease = () => {
             right={false}
             title="Heart"
             img={heart}
-            imgClassName="absolute z-40 bottom-0 top-[15%] left-[20%] max-h-[100%]"
+            imgClassName="absolute z-40 bottom-0 top-[15%] left-[20%] max-h-[100%] max-w-[75%] md:max-w-[90%]"
             titleTop={false}
           />
         </div>
