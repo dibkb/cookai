@@ -56,7 +56,7 @@ export const Team = () => {
           <p className="text-sm">Team</p>
         </main>
         <p className="font-semibold italic">May 2021</p>
-        <div className="flex justify-center gap-20 my-12">
+        <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 sm:gap-x-16 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-10">
           <MemberOne />
           <MemberDK />
           <MemberIkraj />
@@ -75,14 +75,12 @@ export const Website = () => {
           <TfiWorld size={45} />
           <p className="text-sm">Website</p>
         </main>
-        <p className="font-semibold italic">May 2021</p>
+        <p className="font-semibold italic">March 2023</p>
       </section>
       <p className="font-medium text-stone-700 leading-8 text-sm">
-        In pretium tincidunt et et sed arcu nascetur ac maecenas. Aliquam porta
-        augue sollicitudin morbi adipiscing amet a morbi ac. Elementum venenatis
-        molestie sagittis vel facilisis dictum consequat morbi lobortis. Ac eu
-        velit libero dui gravida consequat sapien mi dui. In dictum suspendisse
-        hac sed tellus placerat tellus. Hac amet condimentum urna viverra{" "}
+        Recalling the quote, we launched this website on March 25, 2023 - "Start
+        where you are. Use what you have. Do what you can". Our team is about to
+        embark on an unexpected journey, which we are very thrilled about.
       </p>
     </div>
   );
@@ -95,15 +93,9 @@ export const Database = () => {
           <BsDatabaseFill size={45} />
           <p className="text-sm">Database</p>
         </main>
-        <p className="font-semibold italic">May 2021</p>
+        <p className="font-semibold italic">TBD</p>
       </section>
-      <p className="font-medium text-stone-700 leading-8 text-sm">
-        In pretium tincidunt et et sed arcu nascetur ac maecenas. Aliquam porta
-        augue sollicitudin morbi adipiscing amet a morbi ac. Elementum venenatis
-        molestie sagittis vel facilisis dictum consequat morbi lobortis. Ac eu
-        velit libero dui gravida consequat sapien mi dui. In dictum suspendisse
-        hac sed tellus placerat tellus. Hac amet condimentum urna viverra{" "}
-      </p>
+      <p className="font-medium text-stone-700 leading-8 text-sm"></p>
     </div>
   );
 };
@@ -115,15 +107,9 @@ export const App = () => {
           <AiFillAppstore size={45} />
           <p className="text-sm">App</p>
         </main>
-        <p className="font-semibold italic">May 2021</p>
+        <p className="font-semibold italic">TBD</p>
       </section>
-      <p className="font-medium text-stone-700 leading-8 text-sm">
-        In pretium tincidunt et et sed arcu nascetur ac maecenas. Aliquam porta
-        augue sollicitudin morbi adipiscing amet a morbi ac. Elementum venenatis
-        molestie sagittis vel facilisis dictum consequat morbi lobortis. Ac eu
-        velit libero dui gravida consequat sapien mi dui. In dictum suspendisse
-        hac sed tellus placerat tellus. Hac amet condimentum urna viverra{" "}
-      </p>
+      <p className="font-medium text-stone-700 leading-8 text-sm"></p>
     </div>
   );
 };
