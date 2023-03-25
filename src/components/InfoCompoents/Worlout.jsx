@@ -14,7 +14,7 @@ const Worlout = () => {
             to assist you together along with your fitness goals. We use your
             diet data and share it with our fitness centers to provide a
             complete Data-Driven Workout Program. The plan will cover diet,
-            workout and analysis.
+            workout tailored to your specific needs and requirements.
           </p>
         </div>
         <div className="">

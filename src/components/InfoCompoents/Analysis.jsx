@@ -19,13 +19,12 @@ const Analysis = () => {
         <div className="max-w-[750px] flex flex-col gap-12 lg:mt-16 text-center">
           <InfoHeading title="In-Depth Assistance" />
           <p className="text-cookTextLight leading-8 ">
-            Get round-the-clock assistance with dieting and workouts that is
-            tailored to your specific needs. The Artificial Intelligence allows
-            you to select the fitness plan that best suits your needs. There
-            will be no food restrictions because every detail of what you eat
-            will be tracked, and only specific workouts will be assigned based
-            on your consumption habits.It's up to you whether or not you'll keep
-            to your exercise schedule!
+            Get round-the-clock assistance on sleep, stress level, medications,
+            genome, microbiome, and glucose, body composition, adherence, weight
+            change rate trends, hunger, and fatigue. Every important detail of
+            your body will be tracked, and only plan will be assigned based on
+            your body metrics. It's up to you whether or not you'll keep to your
+            motivation!
           </p>
         </div>
       </main>
