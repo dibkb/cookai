@@ -21,8 +21,9 @@ const DietPlanning = () => {
           <p className="text-cookTextLight leading-8 ">
             Get every detail about the recipe you are about to cook. Ranging
             from Ingredients, Nutritional values and Methods to cook it
-            perfectly. Become a master of the recipe even if you had never
-            prepared it before !
+            perfectly. Ensure that your body doesn't miss life supporting
+            molecules by tracking them through our App and Become a master of
+            the recipe even if you had never prepared it before !
           </p>
         </div>
       </main>

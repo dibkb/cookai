@@ -10,9 +10,11 @@ const Worlout = () => {
         <div className="max-w-[750px] flex flex-col gap-12 lg:mt-16 text-center">
           <InfoHeading title="Personalised Workout" />
           <p className="text-cookTextLight leading-8 ">
-            Track everything that goes into your body. We use your data on
-            Macro, Micro Nutrients and share it with our fitness centers to
-            provide a complete Data-Driven Workout Program.
+            Track everything that goes into your body. Allow are Fitness Centres
+            to assist you together along with your fitness goals. We use your
+            diet data and share it with our fitness centers to provide a
+            complete Data-Driven Workout Program. The plan will cover diet,
+            workout and analysis.
           </p>
         </div>
         <div className="">

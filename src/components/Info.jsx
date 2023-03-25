@@ -2,6 +2,7 @@ import React from "react";
 import Analysis from "./InfoCompoents/Analysis";
 import DietPlanning from "./InfoCompoents/DietPlanning";
 import OnePlatform from "./InfoCompoents/OnePlatform";
+import Preventdisease from "./InfoCompoents/Preventdisease";
 import Worlout from "./InfoCompoents/Worlout";
 const Info = (props) => {
   return (
@@ -14,6 +15,7 @@ const Info = (props) => {
         <DietPlanning />
         <Worlout />
         <Analysis />
+        <Preventdisease />
       </div>
     </div>
   );
