@@ -105,7 +105,7 @@ export const Partner = ({ setShowModal }) => {
       <div className={styles.modal__content}>
         <main className="flex items-center justify-between">
           <h1 className="font-raleway text-3xl font-semibold text-stone-700 select-none mb-2">
-            We are Hiring!
+            We are not Hiring!
           </h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,7 @@ export const Partner = ({ setShowModal }) => {
         </main>
 
         <small className="text-xs font-medium text-stone-500">
-          Please choose a role you want to apply for
+          Follow our Social Media handles for regular updates :)
         </small>
         <main className="grid grid-cols-1 sm:grid-cols-3 gap-4 select-none mt-6">
           {allItems.map((element) => {
