@@ -48,7 +48,7 @@ export const Partner = ({ setShowModal }) => {
     if (linkedin !== "") {
       if (
         linkedin.match(
-          /^(http[s]?:\/\/)?([w]{3}\.)?[a-z0-9]+\.[a-z]{2,3}(\.[a-z]{2})?([\/]?[a-zA-Z0-9#]+\/?)*$/
+          /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/
         )
       ) {
         setError({ ...error, linkedin: false });
