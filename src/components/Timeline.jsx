@@ -6,7 +6,7 @@ const Timeline = () => {
   return (
     <>
       <Navbar />
-      <div className="mt-20 px-4 lg:px-12 xl:px-24 2xl:px-64">
+      <div className="mt-[7rem] px-4 lg:px-12 xl:px-24 2xl:px-64">
         <div className="w-fit mx-auto">
           <Mainheading title="Timeline" />
         </div>
