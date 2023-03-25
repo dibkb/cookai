@@ -105,7 +105,7 @@ export const Partner = ({ setShowModal }) => {
       <div className={styles.modal__content}>
         <main className="flex items-center justify-between">
           <h1 className="font-raleway text-3xl font-semibold text-stone-700 select-none mb-2">
-            We are not Hiring!
+            We are not hiring currently!
           </h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +127,7 @@ export const Partner = ({ setShowModal }) => {
         <small className="text-xs font-medium text-stone-500">
           Follow our Social Media handles for regular updates :)
         </small>
-        <main className="grid grid-cols-1 sm:grid-cols-3 gap-4 select-none mt-6">
+        {/* <main className="grid grid-cols-1 sm:grid-cols-3 gap-4 select-none mt-6">
           {allItems.map((element) => {
             return (
               <span
@@ -179,15 +179,15 @@ export const Partner = ({ setShowModal }) => {
           My friends , Diet is a very important part of our life , every
           molecules that goes into our body decides how the body is going to
           function.
-        </p>
-        <button
+        </p> */}
+        {/* <button
           onClick={() => {
             setPage(2);
           }}
           className="w-full sm:w-1/3 border bg-cookLime w-xl py-3 rounded-lg select-none border-cookGreen hover:bg-cookDarkGreen hover:text-white font-medium text-stone-700 mt-6"
         >
           Next
-        </button>
+        </button> */}
       </div>
     </section>
   );
@@ -341,7 +341,7 @@ export const Partner = ({ setShowModal }) => {
         <SuccessPortal buttonClickHandler={buttonClickHandler} />
       )}
       {page === 1 && formOne}
-      {page === 2 && formTwo}
+      {/* {page === 2 && formTwo} */}
     </>,
     document.body
   );
