@@ -43,19 +43,19 @@ const Footer = ({ scrollRefFooter }) => {
             © 2023 Cookai. All rights reserved.
           </p>
           <main className="text-stone-700 flex gap-3">
-            <a href="https://twitter.com/dibaskb">
+            {/* <a href="https://twitter.com/dibaskb">
               <AiOutlineTwitter
                 className="border rounded-md p-1 cursor-pointer hover:text-white hover:bg-stone-700"
                 size={"35"}
               />
-            </a>
-            <a href="https://www.linkedin.com/in/dibas-k-borborah-736a04185/">
+            </a> */}
+            <a href="https://www.linkedin.com/company/cook-ai/">
               <AiFillLinkedin
                 className="border rounded-md p-1 cursor-pointer hover:text-white hover:bg-stone-700"
                 size={"35"}
               />
             </a>
-            <a href="https://www.instagram.com/dib.kb/">
+            <a href="https://www.instagram.com/cookonline.in/?igshid=YmMyMTA2M2Y%3D">
               <AiOutlineInstagram
                 className="border rounded-md p-1 cursor-pointer hover:text-white hover:bg-stone-700"
                 size={"35"}
