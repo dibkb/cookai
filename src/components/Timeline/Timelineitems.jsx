@@ -12,7 +12,7 @@ import {
 } from "./Team";
 export const Idea = () => {
   return (
-    <div className="flex flex-col gap-8 text-center mt-12 items-center">
+    <div className="flex flex-col gap-8 text-center items-center border-b border-stone-200 pb-20 mt-20">
       <section className="flex gap-4 items-center relative">
         <main className="bg-stone-800 text-white w-[120px] h-[120px] justify-center rounded-2xl shadow-md flex flex-col gap-4 items-center">
           <BsFillRocketFill size={45} />
@@ -51,7 +51,7 @@ export const Idea = () => {
 };
 export const Team = () => {
   return (
-    <div className="flex flex-col gap-8 text-center mt-12 items-center">
+    <div className="flex flex-col gap-8 text-center pb-20 mt-20 items-center border-b border-stone-200">
       <section className="flex gap-4 items-center relative">
         <main className="bg-stone-800 text-white w-[120px] h-[120px] justify-center rounded-2xl shadow-md flex flex-col gap-4 items-center">
           <RiTeamFill size={45} />
@@ -73,7 +73,7 @@ export const Team = () => {
 };
 export const Website = () => {
   return (
-    <div className="flex flex-col gap-8 text-center mt-12 items-center">
+    <div className="flex flex-col gap-8 text-center items-center border-b border-stone-200 pb-20 mt-20">
       <section className="flex gap-4 items-center relative">
         <main className="bg-stone-800 text-white w-[120px] h-[120px] rounded-2xl shadow-md flex flex-col gap-4 justify-center items-center">
           <TfiWorld size={45} />
@@ -93,7 +93,7 @@ export const Website = () => {
 };
 export const Database = () => {
   return (
-    <div className="flex flex-col gap-8 text-center mt-12 items-center">
+    <div className="flex flex-col gap-8 text-center items-center border-b border-stone-200 pb-20 mt-20">
       <section className="flex gap-4 items-center relative">
         <main className="bg-stone-800 text-white w-[120px] h-[120px] justify-center rounded-2xl shadow-md flex flex-col gap-4 items-center">
           <BsDatabaseFill size={45} />
@@ -109,7 +109,7 @@ export const Database = () => {
 };
 export const App = () => {
   return (
-    <div className="flex flex-col gap-8 text-center mt-12 items-center">
+    <div className="flex flex-col gap-8 text-center items-center border-b border-stone-200 pb-20 mt-20">
       <section className="flex gap-4 items-center relative">
         <main className="bg-stone-800 text-white w-[120px] h-[120px] justify-center rounded-2xl shadow-md flex flex-col gap-4 items-center">
           <AiFillAppstore size={45} />
