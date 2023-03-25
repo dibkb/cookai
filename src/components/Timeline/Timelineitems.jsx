@@ -50,20 +50,20 @@ export const Idea = () => {
 export const Team = () => {
   return (
     <div className="flex flex-col gap-8 text-center items-center mt-12">
-      <section className="flex flex-col gap-4 items-center">
+      <section className="flex gap-4 items-center">
         <main className="bg-stone-800 text-white w-fit px-12 py-6 rounded-2xl shadow-md flex flex-col gap-4 items-center">
           <RiTeamFill size={45} />
           <p className="text-sm">Team</p>
         </main>
         <p className="font-semibold italic">May 2021</p>
-        <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 sm:gap-x-16 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-10">
-          <MemberOne />
-          <MemberDK />
-          <MemberIkraj />
-          <MemberIrhad />
-          <MemberSatyajeet />
-        </div>
       </section>
+      <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 sm:gap-x-16 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-10">
+        <MemberOne />
+        <MemberDK />
+        <MemberIkraj />
+        <MemberIrhad />
+        <MemberSatyajeet />
+      </div>
     </div>
   );
 };
