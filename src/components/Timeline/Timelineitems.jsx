@@ -12,13 +12,15 @@ import {
 } from "./Team";
 export const Idea = () => {
   return (
-    <div className="flex flex-col gap-8 text-center items-center mt-12">
-      <section className="flex gap-4 items-center">
-        <main className="bg-stone-800 text-white w-fit px-12 py-6 rounded-2xl shadow-md flex flex-col gap-4 items-center">
+    <div className="flex flex-col gap-8 text-center mt-12 items-center">
+      <section className="flex gap-4 items-center relative">
+        <main className="bg-stone-800 text-white w-[120px] h-[120px] justify-center rounded-2xl shadow-md flex flex-col gap-4 items-center">
           <BsFillRocketFill size={45} />
           <p className="text-sm">Idea</p>
         </main>
-        <p className="font-semibold italic">May 2021</p>
+        <p className="font-semibold italic absolute left-[150px] whitespace-nowrap text-xs">
+          May 2021
+        </p>
       </section>
       <p className="font-medium text-stone-700 leading-8 text-sm">
         Despite decades of diet fads and government-issued food pyramids, we
@@ -49,13 +51,15 @@ export const Idea = () => {
 };
 export const Team = () => {
   return (
-    <div className="flex flex-col gap-8 text-center items-center mt-12">
-      <section className="flex gap-4 items-center">
-        <main className="bg-stone-800 text-white w-fit px-12 py-6 rounded-2xl shadow-md flex flex-col gap-4 items-center">
+    <div className="flex flex-col gap-8 text-center mt-12 items-center">
+      <section className="flex gap-4 items-center relative">
+        <main className="bg-stone-800 text-white w-[120px] h-[120px] justify-center rounded-2xl shadow-md flex flex-col gap-4 items-center">
           <RiTeamFill size={45} />
           <p className="text-sm">Team</p>
         </main>
-        <p className="font-semibold italic">May 2021</p>
+        <p className="font-semibold italic absolute left-[150px] whitespace-nowrap text-xs">
+          May 2021
+        </p>
       </section>
       <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 sm:gap-x-16 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-10">
         <MemberOne />
@@ -69,13 +73,15 @@ export const Team = () => {
 };
 export const Website = () => {
   return (
-    <div className="flex flex-col gap-8 text-center items-center mt-12">
-      <section className="flex gap-4 items-center">
-        <main className="bg-stone-800 text-white w-fit px-12 py-6 rounded-2xl shadow-md flex flex-col gap-4 items-center">
+    <div className="flex flex-col gap-8 text-center mt-12 items-center">
+      <section className="flex gap-4 items-center relative">
+        <main className="bg-stone-800 text-white w-[120px] h-[120px] rounded-2xl shadow-md flex flex-col gap-4 justify-center items-center">
           <TfiWorld size={45} />
           <p className="text-sm">Website</p>
         </main>
-        <p className="font-semibold italic">March 2023</p>
+        <p className="font-semibold italic absolute left-[150px] whitespace-nowrap text-xs">
+          March 2023
+        </p>
       </section>
       <p className="font-medium text-stone-700 leading-8 text-sm">
         Recalling the quote, we launched this website on March 25, 2023 - "Start
@@ -87,13 +93,15 @@ export const Website = () => {
 };
 export const Database = () => {
   return (
-    <div className="flex flex-col gap-8 text-center items-center mt-12">
-      <section className="flex gap-4 items-center">
-        <main className="bg-stone-800 text-white w-fit px-12 py-6 rounded-2xl shadow-md flex flex-col gap-4 items-center">
+    <div className="flex flex-col gap-8 text-center mt-12 items-center">
+      <section className="flex gap-4 items-center relative">
+        <main className="bg-stone-800 text-white w-[120px] h-[120px] justify-center rounded-2xl shadow-md flex flex-col gap-4 items-center">
           <BsDatabaseFill size={45} />
           <p className="text-sm">Database</p>
         </main>
-        <p className="font-semibold italic">TBD</p>
+        <p className="font-semibold italic absolute left-[150px] whitespace-nowrap text-xs">
+          TBD
+        </p>
       </section>
       <p className="font-medium text-stone-700 leading-8 text-sm"></p>
     </div>
@@ -101,13 +109,15 @@ export const Database = () => {
 };
 export const App = () => {
   return (
-    <div className="flex flex-col gap-8 text-center items-center mt-12">
-      <section className="flex gap-4 items-center">
-        <main className="bg-stone-800 text-white w-fit px-12 py-6 rounded-2xl shadow-md flex flex-col gap-4 items-center">
+    <div className="flex flex-col gap-8 text-center mt-12 items-center">
+      <section className="flex gap-4 items-center relative">
+        <main className="bg-stone-800 text-white w-[120px] h-[120px] justify-center rounded-2xl shadow-md flex flex-col gap-4 items-center">
           <AiFillAppstore size={45} />
           <p className="text-sm">App</p>
         </main>
-        <p className="font-semibold italic">TBD</p>
+        <p className="font-semibold italic absolute left-[150px] whitespace-nowrap text-xs">
+          TBD
+        </p>
       </section>
       <p className="font-medium text-stone-700 leading-8 text-sm"></p>
     </div>

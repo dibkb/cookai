@@ -7,7 +7,7 @@ import dk from "../../assets/team/DK.jpg";
 import { AiFillLinkedin } from "react-icons/ai";
 export const MemberOne = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <img src={harshit} alt="" className="rounded-full h-[150px] w-[150px]" />
       <p className="mt-3 font-medium">Harshit Bora</p>
       <p className="mt-3 italic text-sm">Founder</p>
@@ -21,7 +21,7 @@ export const MemberOne = () => {
 };
 export const MemberIrhad = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <img src={irsad} alt="" className="rounded-full h-[150px] w-[150px]" />
       <p className="mt-3 font-medium">Irshad Sareshwala</p>
       <p className="mt-3 italic text-sm">Data Analyst</p>
@@ -35,7 +35,7 @@ export const MemberIrhad = () => {
 };
 export const MemberIkraj = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <img src={ikraj} alt="" className="rounded-full h-[150px] w-[150px]" />
       <p className="mt-3 font-medium">Ikraj Singh</p>
       <p className="mt-3 italic text-sm">Operations Management</p>
@@ -52,7 +52,7 @@ export const MemberIkraj = () => {
 };
 export const MemberSatyajeet = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <img src={satyajit} alt="" className="rounded-full h-[150px] w-[150px]" />
       <p className="mt-3 font-medium">Satyajeet Narayan</p>
       <p className="mt-3 italic text-sm">Database Manager</p>
@@ -66,7 +66,7 @@ export const MemberSatyajeet = () => {
 };
 export const MemberDK = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <img src={dk} alt="" className="rounded-full h-[150px] w-[150px]" />
       <p className="mt-3 font-medium">Dibas K Borborah</p>
       <p className="mt-3 italic text-sm">CTO</p>
