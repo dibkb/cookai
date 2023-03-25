@@ -22,30 +22,37 @@ export const Idea = () => {
           May 2021
         </p>
       </section>
-      <p className="font-medium text-stone-700 leading-8 text-sm">
-        Despite decades of diet fads and government-issued food pyramids, we
-        still know surprisingly little about nutrition science! The idea that
-        there is one optimal diet for everyone is a fundamental flaw in the
-        entire premise. It contradicts the remarkable diversity of human
-        metabolism, microbiome (the 40 trillion bacteria from approximately
-        1,000 species that live in our guts), and environment (lifestyle, family
-        history, medical conditions, medications) that distinguishes each of us.
-        A Good diet has to be individualised. There are also efforts underway in
-        the pitch. Deep learning, another subtype of A.I, is used in some
-        ongoing nutrition studies to accurately determine what participants are
-        eating from smartphone photos of their plates of food. This eliminates
-        the need to manually enter data(as long as participants remember to take
-        the picture). But that is a single type of data. Rather than just
-        creating a simple calorie calculator, our idea is to process all of our
-        data — workout, activity, sleep, stress level, medications, genome,
-        microbiome, and glucose — from multiple devices, such as skin patches
-        and smartwatches. With advanced algorithms, this is entirely possible,
-        taking into account all aspects of dieting such as body composition,
-        adherence, weight change rate trends, hunger, and fatigue. The important
-        thing to remember is that we will not simply collect this information.
-        An algorithm will constantly assess how these data points trend in
-        relation to one another and will make appropriate adjustments.
-      </p>
+      <section className="font-medium text-stone-700 leading-8 text-sm flex flex-col gap-y-6">
+        <p>
+          Despite decades of diet fads and government-issued food pyramids, we
+          still know surprisingly little about nutrition science! The idea that
+          there is one optimal diet for everyone is a fundamental flaw in the
+          entire premise. It contradicts the remarkable diversity of human
+          metabolism, microbiome and environment (lifestyle, family history,
+          medical conditions, medications) that distinguishes each of us.Thus, a
+          Good diet has to be individualised.{" "}
+        </p>
+        <p>
+          There are already efforts underway in the pitch. Deep learning,
+          another subtype of A.I, is used in some ongoing nutrition studies to
+          accurately determine what participants are eating from smartphone
+          photos of their plates of food. This eliminates the need to manually
+          enter data(as long as participants remember to take the picture).
+        </p>
+        <p>
+          But that is a single type of data! Rather than just creating a simple
+          calorie calculator, our idea is to process all of our data — workout,
+          activity, sleep, stress level, medications, genome, microbiome, and
+          glucose — from multiple devices, such as skin patches and
+          smartwatches. With advanced algorithms, this is entirely possible,
+          taking into account all aspects of dieting such as body composition,
+          adherence, weight change rate trends, hunger, and fatigue. The
+          important thing to remember is that we will not simply collect this
+          information. An algorithm will constantly assess how these data points
+          trend in relation to one another and will make appropriate
+          adjustments.
+        </p>
+      </section>
     </div>
   );
 };
