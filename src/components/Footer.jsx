@@ -60,7 +60,7 @@ const Footer = ({ scrollRefFooter }) => {
                 size={"35"}
               />
             </a>
-            <a href="https://www.instagram.com/cookonline.in/?igshid=YmMyMTA2M2Y%3D">
+            <a href="https://www.instagram.com/cookapp.in/">
               <AiOutlineInstagram
                 className="border rounded-md p-1 cursor-pointer hover:text-white hover:bg-stone-700"
                 size={"35"}
