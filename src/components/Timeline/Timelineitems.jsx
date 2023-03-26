@@ -107,7 +107,7 @@ export const Database = () => {
           <BsDatabaseFill size={45} />
           <p className="text-sm">Database</p>
         </main>
-        <p className="font-semibold italic absolute left-[150px] whitespace-nowrap text-xs">
+        <p className="font-semibold italic absolute left-[150px] text-xs">
           Work in progress
         </p>
       </section>
@@ -123,7 +123,7 @@ export const App = () => {
           <AiFillAppstore size={45} />
           <p className="text-sm">App</p>
         </main>
-        <p className="font-semibold italic absolute left-[150px] whitespace-nowrap text-xs">
+        <p className="font-semibold italic absolute left-[150px] text-xs">
           Work in progress
         </p>
       </section>
