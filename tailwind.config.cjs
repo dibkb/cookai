@@ -11,6 +11,7 @@ module.exports = {
         raleway: ["Raleway", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
         satisfy: ["Satisfy", "cursive"],
+        pacifico: ["Pacifico", "cursive"],
       },
       colors: {
         cookLime: "#C5FA2E",
