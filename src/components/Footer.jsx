@@ -8,6 +8,7 @@ import {
 import { MdLocationOn } from "react-icons/md";
 import { GrMail } from "react-icons/gr";
 import cookImage from "../assets/logo.png";
+import { FullLogo } from "./Fulllogo";
 const Footer = ({ scrollRefFooter }) => {
   return (
     <div
@@ -16,8 +17,8 @@ const Footer = ({ scrollRefFooter }) => {
     >
       <div className="mt-5 pt-5 border-t-2 border-stone-800">
         <div>
-          <img src={cookImage} alt="" className="h-10 mb-4" />
-          <p className="text-sm font-semibold text-stone-600">
+          <FullLogo />
+          <p className="text-sm font-semibold text-stone-600 mt-6">
             Muscles are torn in the gym, fed in the kitchen and built in the
             bed.
           </p>
@@ -54,13 +55,13 @@ const Footer = ({ scrollRefFooter }) => {
                 size={"35"}
               />
             </a> */}
-            <a href="https://www.linkedin.com/company/cook-ai/">
+            <a href="https://www.linkedin.com/company/cook-ai/" target="_blank">
               <AiFillLinkedin
                 className="border rounded-md p-1 cursor-pointer hover:text-white hover:bg-stone-700"
                 size={"35"}
               />
             </a>
-            <a href="https://www.instagram.com/cookapp.in/">
+            <a href="https://www.instagram.com/nutrinationapp/" target="_blank">
               <AiOutlineInstagram
                 className="border rounded-md p-1 cursor-pointer hover:text-white hover:bg-stone-700"
                 size={"35"}

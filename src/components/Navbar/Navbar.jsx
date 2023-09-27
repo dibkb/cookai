@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
+import { FullLogo } from "../Fulllogo";
 const NavItem = () => {
   const navItemClassName =
     "select-non text-center w-full cursor-pointer text-cookTextDark font-medium text-base py-2 px-4 rounded-md hover:bg-yellow-50";
@@ -25,7 +26,7 @@ const Navbar = () => {
     <nav className="z-50 shadow-md fixed top-0 w-full px-4 lg:px-12 xl:px-24 2xl:px-64 bg-white pb-4">
       <div className="flex items-center justify-between mt-3">
         <Link to="/">
-          <img src={logo} alt="" width={97} className="select-none" />
+          <FullLogo />
         </Link>
         <div className="hidden gap-10 md:flex">
           <NavItem />
